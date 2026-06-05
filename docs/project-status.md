@@ -17,6 +17,7 @@ Vercel production at `https://shoreline-pod.com`.
 - Added search/filter interaction.
 - Replaced the homepage hero thumbnail with an animated terminal-style ASCII
   waveform.
+- Simplified homepage copy into a shorter, more minimal reading experience.
 - Added individual show notes pages for episodes 1, 2, and 3.
 - Added transcript-derived tactical guides and resource links for episode 1.
 - Added transcript-derived tactical guides, chapters, and resource links for
@@ -41,7 +42,7 @@ Vercel production at `https://shoreline-pod.com`.
 
 - Latest episode feature: `Token Maxing and the Company Brain Era | Shoreline Ep. 3`
 - Homepage hero: animated `shoreline://waveform.live` terminal panel inspired by
-  the Shoreline design guide.
+  the Shoreline design guide, with minimal homepage copy.
 - Episode detail pages:
   - `episodes/episode-1.html` has full transcript-derived notes in the new
     editorial notes layout, plus exact Apple Podcasts and Spotify episode

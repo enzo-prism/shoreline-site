@@ -25,11 +25,11 @@ function applySearch(rawQuery) {
   if (!searchCount) return;
 
   if (query.length === 0) {
-    searchCount.textContent = "Showing all notes.";
+    searchCount.textContent = "All notes.";
   } else if (visible === 1) {
-    searchCount.textContent = "Showing 1 matching note.";
+    searchCount.textContent = "1 match.";
   } else {
-    searchCount.textContent = `Showing ${visible} matching notes.`;
+    searchCount.textContent = `${visible} matches.`;
   }
 }
 
