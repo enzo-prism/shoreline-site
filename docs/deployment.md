@@ -55,5 +55,5 @@ locally with the Vercel CLI.
 - Mobile layout has no horizontal overflow.
 - Search/filter interaction works.
 - Public YouTube links open to the confirmed Shoreline channel/videos.
-- Apple Podcasts, Spotify, and RSS cards remain marked as pending until those
-  public links are confirmed.
+- Apple Podcasts, Spotify, and YouTube cards open confirmed public links.
+- RSS remains marked as pending until a public feed URL is confirmed.

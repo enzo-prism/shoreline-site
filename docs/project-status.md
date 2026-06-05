@@ -28,12 +28,12 @@ Vercel production.
   tool comparisons, human review
 - Resource index: Codex, Claude Code, Cursor, Notion, model routing, AI
   prospecting systems
-- Listen cards: YouTube confirmed; Apple Podcasts, Spotify, and RSS pending
+- Listen cards: YouTube, Apple Podcasts, and Spotify confirmed; RSS pending
   public-link verification
 
 ## Next content tasks
 
-- Confirm Apple Podcasts, Spotify, and RSS public URLs.
+- Confirm RSS public URL.
 - Add transcript-derived chapters for each episode.
 - Convert topics and resources into structured content collections if the site
   moves to Astro, Next.js, or another framework.
