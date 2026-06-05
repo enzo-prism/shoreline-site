@@ -50,7 +50,10 @@
         <a href="#resources">Resources</a>
         <a href="#about">About</a>
       </div>
-      <a class="button button-dark" href="https://www.youtube.com/@ShorelinePod" target="_blank" rel="noreferrer">YouTube</a>
+      <a class="button button-dark" href="https://www.youtube.com/@ShorelinePod" target="_blank" rel="noreferrer">
+        <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-youtube"></use></svg>
+        <span>YouTube</span>
+      </a>
     </div>
   </nav>
 
@@ -72,10 +75,16 @@
           <h1>AI notes from Shoreline.</h1>
           <p class="lead">Agents, company brains, automation, and taste.</p>
           <div class="search-panel" role="search">
-            <label for="site-search">Search notes</label>
+            <label for="site-search">
+              <svg class="icon icon-sm" aria-hidden="true"><use href="assets/icons.svg#icon-search"></use></svg>
+              <span>Search notes</span>
+            </label>
             <div class="search-row">
               <input id="site-search" type="search" placeholder="agents, sales" autocomplete="off" enterkeyhint="search">
-              <button class="button button-teal" id="clear-search" type="button">Clear</button>
+              <button class="button button-teal" id="clear-search" type="button">
+                <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-x"></use></svg>
+                <span>Clear</span>
+              </button>
             </div>
             <p id="search-count" class="search-count">All notes.</p>
           </div>
@@ -150,8 +159,14 @@
               </div>
             </div>
             <div class="episode-actions">
-              <a class="button button-teal" href="episodes/episode-3.html">Read show notes</a>
-              <a class="button" href="https://www.youtube.com/watch?v=Fzl7IqTfpsE" target="_blank" rel="noreferrer">Open on YouTube</a>
+              <a class="button button-teal" href="episodes/episode-3.html">
+                <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-book"></use></svg>
+                <span>Read show notes</span>
+              </a>
+              <a class="button" href="https://www.youtube.com/watch?v=Fzl7IqTfpsE" target="_blank" rel="noreferrer">
+                <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-youtube"></use></svg>
+                <span>Open on YouTube</span>
+              </a>
             </div>
           </div>
         </div>
@@ -206,32 +221,50 @@
 
         <div class="topic-grid">
           <article class="topic-card searchable" data-index="company brain knowledge management memory internal context notes">
-            <span>01</span>
+            <div class="card-top">
+              <span>01</span>
+              <svg class="icon icon-badge" aria-hidden="true"><use href="assets/icons.svg#icon-brain"></use></svg>
+            </div>
             <h3>Company brain</h3>
             <p>Shared memory for AI work.</p>
           </article>
           <article class="topic-card searchable" data-index="ai agents agentic work workers coordinators interfaces collaborators">
-            <span>02</span>
+            <div class="card-top">
+              <span>02</span>
+              <svg class="icon icon-badge" aria-hidden="true"><use href="assets/icons.svg#icon-spark"></use></svg>
+            </div>
             <h3>AI agents</h3>
             <p>Workers, coordinators, interfaces.</p>
           </article>
           <article class="topic-card searchable" data-index="workflow automation sales prospecting productivity operations routing">
-            <span>03</span>
+            <div class="card-top">
+              <span>03</span>
+              <svg class="icon icon-badge" aria-hidden="true"><use href="assets/icons.svg#icon-route"></use></svg>
+            </div>
             <h3>Workflow automation</h3>
             <p>Repeatable systems for daily work.</p>
           </article>
           <article class="topic-card searchable" data-index="token economics token maxing costs context windows openrouter model routing">
-            <span>04</span>
+            <div class="card-top">
+              <span>04</span>
+              <svg class="icon icon-badge" aria-hidden="true"><use href="assets/icons.svg#icon-waves"></use></svg>
+            </div>
             <h3>Token economics</h3>
             <p>Context, costs, and routing.</p>
           </article>
           <article class="topic-card searchable" data-index="tool comparisons codex claude code cursor openai anthropic">
-            <span>05</span>
+            <div class="card-top">
+              <span>05</span>
+              <svg class="icon icon-badge" aria-hidden="true"><use href="assets/icons.svg#icon-code"></use></svg>
+            </div>
             <h3>Tool comparisons</h3>
             <p>Codex, Claude Code, Cursor.</p>
           </article>
           <article class="topic-card searchable" data-index="human review taste slop detector human in the loop judgment">
-            <span>06</span>
+            <div class="card-top">
+              <span>06</span>
+              <svg class="icon icon-badge" aria-hidden="true"><use href="assets/icons.svg#icon-spark"></use></svg>
+            </div>
             <h3>Human review</h3>
             <p>Taste before shipping.</p>
           </article>
@@ -251,32 +284,50 @@
 
         <div class="resource-grid">
           <article class="resource-card searchable" data-index="codex coding agent tool comparison episode 3">
-            <span class="resource-type">Tool</span>
+            <div class="card-top">
+              <span class="resource-type">Tool</span>
+              <svg class="icon icon-badge" aria-hidden="true"><use href="assets/icons.svg#icon-code"></use></svg>
+            </div>
             <h3>Codex</h3>
             <p>Agentic coding workflows.</p>
           </article>
           <article class="resource-card searchable" data-index="claude code anthropic coding agent tool comparison episode 3">
-            <span class="resource-type">Tool</span>
+            <div class="card-top">
+              <span class="resource-type">Tool</span>
+              <svg class="icon icon-badge" aria-hidden="true"><use href="assets/icons.svg#icon-code"></use></svg>
+            </div>
             <h3>Claude Code</h3>
             <p>Long-running code work.</p>
           </article>
           <article class="resource-card searchable" data-index="cursor ai editor coding tool comparison episode 3">
-            <span class="resource-type">Tool</span>
+            <div class="card-top">
+              <span class="resource-type">Tool</span>
+              <svg class="icon icon-badge" aria-hidden="true"><use href="assets/icons.svg#icon-route"></use></svg>
+            </div>
             <h3>Cursor</h3>
             <p>AI-native editing.</p>
           </article>
           <article class="resource-card searchable" data-index="notion company brain notes knowledge management episode 1 episode 3">
-            <span class="resource-type">Tool</span>
+            <div class="card-top">
+              <span class="resource-type">Tool</span>
+              <svg class="icon icon-badge" aria-hidden="true"><use href="assets/icons.svg#icon-book"></use></svg>
+            </div>
             <h3>Notion</h3>
             <p>Notes and memory.</p>
           </article>
           <article class="resource-card searchable" data-index="openrouter token costs model routing inference episode 3">
-            <span class="resource-type">Infrastructure</span>
+            <div class="card-top">
+              <span class="resource-type">Infrastructure</span>
+              <svg class="icon icon-badge" aria-hidden="true"><use href="assets/icons.svg#icon-route"></use></svg>
+            </div>
             <h3>Model routing</h3>
             <p>Pick the right model.</p>
           </article>
           <article class="resource-card searchable" data-index="sales prospecting workflows automation productivity episode 2">
-            <span class="resource-type">Workflow</span>
+            <div class="card-top">
+              <span class="resource-type">Workflow</span>
+              <svg class="icon icon-badge" aria-hidden="true"><use href="assets/icons.svg#icon-layers"></use></svg>
+            </div>
             <h3>AI prospecting systems</h3>
             <p>Sales work with agents.</p>
           </article>
@@ -311,19 +362,23 @@
         </div>
         <div class="listen-grid">
           <a class="listen-card confirmed" href="https://www.youtube.com/@ShorelinePod" target="_blank" rel="noreferrer">
-            <span>YouTube</span>
+            <span class="listen-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-youtube"></use></svg></span>
+            <span class="listen-label">YouTube</span>
             <b>Open channel</b>
           </a>
           <a class="listen-card confirmed" href="https://podcasts.apple.com/us/podcast/shoreline/id1896869802?i=1000770876087" target="_blank" rel="noreferrer">
-            <span>Apple Podcasts</span>
+            <span class="listen-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-headphones"></use></svg></span>
+            <span class="listen-label">Apple Podcasts</span>
             <b>Open episode</b>
           </a>
           <a class="listen-card confirmed" href="https://open.spotify.com/episode/1qvT615rgvCYkKJWZBxaEk?si=ux8AdJCKQ2a9GMfgnpOq3w" target="_blank" rel="noreferrer">
-            <span>Spotify</span>
+            <span class="listen-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-radio"></use></svg></span>
+            <span class="listen-label">Spotify</span>
             <b>Open episode</b>
           </a>
           <div class="listen-card pending" aria-disabled="true">
-            <span>RSS</span>
+            <span class="listen-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-waves"></use></svg></span>
+            <span class="listen-label">RSS</span>
             <b>Feed to add</b>
           </div>
         </div>
