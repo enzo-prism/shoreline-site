@@ -51,5 +51,5 @@ The current build runs by opening `index.html` directly in a browser. The next
 step should be turning episode notes, topics, and resources into real content
 collections if the site moves into Astro, Next.js, or another framework.
 
-Episode 1 has transcript-derived tactical notes. Episodes 2 and 3 have starter
-notes pages that should be expanded when transcripts are available.
+Episodes 1 and 2 have transcript-derived tactical notes. Episode 3 has a starter
+notes page that should be expanded when its transcript is available.
