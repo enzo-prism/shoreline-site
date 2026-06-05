@@ -19,6 +19,9 @@ Vercel production at `https://shoreline-pod.com`.
   waveform.
 - Added individual show notes pages for episodes 1, 2, and 3.
 - Added transcript-derived tactical guides and resource links for episode 1.
+- Redesigned the episode show notes pages with the supplied editorial notes
+  concept: dark terminal hero, facts panel, chapter rows, resource stack,
+  reference rows, quotes, and related listening blocks.
 - Added dedicated favicon assets and a minimal Open Graph image.
 - Shortened title tags and meta descriptions across the site.
 - Verified desktop and mobile layout with browser screenshots.
@@ -34,9 +37,12 @@ Vercel production at `https://shoreline-pod.com`.
 - Homepage hero: animated `shoreline://waveform.live` terminal panel inspired by
   the Shoreline design guide.
 - Episode detail pages:
-  - `episodes/episode-1.html` has full transcript-derived notes.
-  - `episodes/episode-2.html` has starter notes pending transcript expansion.
-  - `episodes/episode-3.html` has starter notes pending transcript expansion.
+  - `episodes/episode-1.html` has full transcript-derived notes in the new
+    editorial notes layout.
+  - `episodes/episode-2.html` has polished starter notes pending transcript
+    expansion.
+  - `episodes/episode-3.html` has polished starter notes pending transcript
+    expansion.
 - Episode archive: three public YouTube episodes
 - Topic atlas: company brain, AI agents, workflow automation, token economics,
   tool comparisons, human review

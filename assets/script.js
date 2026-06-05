@@ -4,7 +4,7 @@ const searchCount = document.querySelector("#search-count");
 const searchableItems = Array.from(document.querySelectorAll(".searchable"));
 const filterButtons = Array.from(document.querySelectorAll("[data-filter]"));
 const signalTrack = document.querySelector(".signal-track");
-const heroAsciiWave = document.querySelector("#hero-ascii-wave");
+const asciiWavePanels = Array.from(document.querySelectorAll(".ascii-wave"));
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 function normalize(value) {
@@ -109,21 +109,25 @@ function drawAsciiWave(element, time) {
   element.textContent = output;
 }
 
-if (heroAsciiWave) {
+if (asciiWavePanels.length > 0) {
   let waveTime = 0;
 
-  function animateWave() {
-    drawAsciiWave(heroAsciiWave, waveTime);
+  function animateWaves() {
+    asciiWavePanels.forEach((panel, index) => {
+      drawAsciiWave(panel, waveTime + index * 0.8);
+    });
     waveTime += 0.045;
 
     if (!prefersReducedMotion) {
-      window.requestAnimationFrame(animateWave);
+      window.requestAnimationFrame(animateWaves);
     }
   }
 
-  animateWave();
+  animateWaves();
 
   window.addEventListener("resize", () => {
-    drawAsciiWave(heroAsciiWave, waveTime);
+    asciiWavePanels.forEach((panel, index) => {
+      drawAsciiWave(panel, waveTime + index * 0.8);
+    });
   });
 }

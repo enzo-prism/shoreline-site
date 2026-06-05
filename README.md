@@ -9,10 +9,10 @@ content documentation that should guide future builds.
 
 - [index.html](index.html) - first static website pass.
 - [episodes](episodes) - individual show notes pages for the first three
-  episodes.
+  episodes, using the editorial notes layout.
 - [assets/styles.css](assets/styles.css) - visual system and responsive layout.
 - [assets/script.js](assets/script.js) - search/filter interactions and the hero
-  waveform animation.
+  waveform animation used across the homepage and episode notes.
 - [assets/images](assets/images) - local Shoreline artwork and episode thumbnails.
 - [assets/images/og-image.png](assets/images/og-image.png) - minimal social
   preview image.

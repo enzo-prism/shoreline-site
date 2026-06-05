@@ -30,18 +30,18 @@
   <link rel="stylesheet" href="../assets/styles.css">
   <script src="../assets/script.js" defer></script>
 </head>
-<body>
+<body class="episode-notes">
   <div class="topbar">
     <div class="wrap topbar-inner">
       <span class="live-dot" aria-hidden="true"></span>
-      <span>Show notes: <b>AI Agents and Knowledge Management</b></span>
+      <span>Show notes: <b>AI agents and company brain</b></span>
     </div>
   </div>
 
   <nav class="site-nav" aria-label="Primary navigation">
     <div class="wrap nav-inner">
       <a class="brand" href="../index.html#top" aria-label="Shoreline home">
-        <img src="../assets/images/shoreline-avatar.jpg" alt="" class="brand-mark">
+        <span class="brand-symbol">≈</span>
         <span>Shoreline</span>
       </a>
       <div class="nav-links">
@@ -55,178 +55,228 @@
   </nav>
 
   <main id="top">
-    <section class="episode-hero">
-      <div class="wrap episode-hero-grid">
-        <div>
-          <p class="eyebrow">Shoreline Ep. 1 / May 29, 2026</p>
-          <h1>AI agents and knowledge management: building a company brain.</h1>
-          <p class="episode-summary">The first Shoreline episode is a working map for moving from chatbots to operational AI: local model experiments, agent benches, context plumbing, Notion and CRM systems, review loops, and the habits that keep AI useful instead of chaotic.</p>
-          <div class="episode-meta-line" aria-label="Episode metadata">
-            <span class="meta-pill">1:25:51</span>
-            <span class="meta-pill">Company brain</span>
-            <span class="meta-pill">AI agents</span>
-            <span class="meta-pill">Knowledge management</span>
-          </div>
-          <div class="episode-actions">
-            <a class="button button-teal" href="https://www.youtube.com/watch?v=VUoDvinLPl4" target="_blank" rel="noreferrer">Watch on YouTube</a>
-            <a class="button" href="#guides">Use the playbook</a>
-          </div>
+    <header class="episode-hero">
+      <div class="wrap">
+        <div class="episode-crumb">
+          <a href="../index.html#top">Shoreline</a>
+          <span>/</span>
+          <a href="../index.html#episodes">Episodes</a>
+          <span>/</span>
+          <span>Ep. 1</span>
         </div>
+        <div class="episode-hero-grid">
+          <div class="episode-head">
+            <div class="episode-key">
+              <span class="key-pill">EP 001</span>
+              <span>Season 01 · Company brain</span>
+            </div>
+            <h1>AI agents and <em>company memory.</em></h1>
+            <p class="episode-summary">A working map for moving from chatbots to operational AI: local models, agent benches, context plumbing, Notion and CRM systems, review loops, and the habits that keep AI useful instead of chaotic.</p>
+            <div class="episode-meta-line" aria-label="Episode metadata">
+              <span class="meta-pill">May 29, 2026</span>
+              <span class="meta-pill">1:25:51</span>
+              <span class="meta-pill">16 chapters</span>
+              <span class="meta-pill">Transcript-derived</span>
+            </div>
 
-        <aside class="episode-player-panel" aria-label="Episode video">
-          <a class="video-frame" href="https://www.youtube.com/watch?v=VUoDvinLPl4" target="_blank" rel="noreferrer" aria-label="Watch Shoreline episode 1 on YouTube">
-            <img src="../assets/images/episode-1.jpg" alt="Episode 1 thumbnail for Shoreline">
-            <span class="play-disc" aria-hidden="true"></span>
-          </a>
-          <div class="episode-player-copy">
-            <p class="episode-kicker">Core thesis</p>
-            <h2>AI gets valuable when it has memory, tools, and permission to act.</h2>
-            <p>Most of the episode circles one practical question: how do you give an agent enough trusted context to do real work without letting it damage the business?</p>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <div class="notes-nav" aria-label="Show notes navigation">
-      <div class="wrap notes-nav-inner">
-        <a href="#takeaways">Takeaways</a>
-        <a href="#guides">Tactical guides</a>
-        <a href="#chapters">Chapters</a>
-        <a href="#resources">Resources</a>
-        <a href="#related">Related</a>
-      </div>
-    </div>
-
-    <section class="notes-section" id="takeaways">
-      <div class="wrap notes-layout">
-        <div class="notes-main">
-          <div class="section-head">
-            <div>
-              <p class="eyebrow">Deep read</p>
-              <h2>The operating system behind the conversation.</h2>
+            <div class="mini-player" aria-label="Episode progress preview">
+              <span class="play-btn" aria-hidden="true">▶</span>
+              <span class="mini-wave" aria-hidden="true">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              </span>
+              <span class="ptime">00:00 / 1:25:51</span>
+            </div>
+            <div class="listen-mini">
+              <a href="https://www.youtube.com/watch?v=VUoDvinLPl4" target="_blank" rel="noreferrer">▸ YouTube</a>
+              <a href="https://podcasts.apple.com/us/podcast/shoreline/id1896869802?i=1000770876087" target="_blank" rel="noreferrer">▸ Apple</a>
+              <a href="https://open.spotify.com/episode/1qvT615rgvCYkKJWZBxaEk?si=ux8AdJCKQ2a9GMfgnpOq3w" target="_blank" rel="noreferrer">▸ Spotify</a>
+              <a href="#guides">▸ Playbook</a>
             </div>
           </div>
 
-          <div class="takeaway-grid">
-            <article class="takeaway-card">
-              <span>01</span>
-              <h3>Local AI is a fallback lane, not the whole road.</h3>
-              <p>A Mac mini with Ollama is useful for privacy, offline experiments, and cheap iteration. The episode is clear-eyed that smaller local models are often behind the frontier cloud models.</p>
-            </article>
-            <article class="takeaway-card">
-              <span>02</span>
-              <h3>The agent stack is mostly context plumbing.</h3>
-              <p>Hermes, OpenClaw, terminals, Telegram, MCPs, and APIs are not magic by themselves. The work is deciding what each agent can see, touch, update, and report back.</p>
-            </article>
-            <article class="takeaway-card">
-              <span>03</span>
-              <h3>The company brain needs backups and review.</h3>
-              <p>Notion and a CRM become valuable when they hold durable context. They also become fragile when an agent can wipe tags, overwrite fields, or create unreviewed output.</p>
-            </article>
-          </div>
+          <aside class="terminal-panel episode-terminal" aria-label="Animated Shoreline notes terminal">
+            <div class="terminal-bar">
+              <span class="terminal-dot dot-red"></span>
+              <span class="terminal-dot dot-yellow"></span>
+              <span class="terminal-dot dot-green"></span>
+              <span class="terminal-path">shoreline://notes/ep_001 - agents</span>
+            </div>
+            <pre class="ascii-wave" aria-hidden="true"></pre>
+            <div class="terminal-foot">
+              <span>show notes · v2</span>
+              <span class="recording-dot"><i></i>published</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </header>
 
-          <div class="quote-panel">
-            <p>The useful AI workflow is not "ask a chatbot." It is source of truth, agent access, task routing, review, backup, and a human who understands the texture of the work.</p>
+    <div class="notes-nav" aria-label="Show notes navigation">
+      <div class="wrap notes-nav-inner">
+        <a href="#gist">Gist</a>
+        <a href="#takeaways">Takeaways</a>
+        <a href="#guides">Tactical guides</a>
+        <a href="#chapters">Chapters</a>
+        <a href="#resources">Tools</a>
+        <a href="#references">Links</a>
+      </div>
+    </div>
+
+    <section class="notes-section episode-gist" id="gist">
+      <div class="wrap">
+        <div class="label-row"><span class="eyebrow">The gist</span><span class="rule"></span></div>
+        <div class="gist-grid">
+          <div class="gist-body">
+            <p class="drop">Episode 1 is really about the moment AI stops being a clever writing tool and starts becoming a business operating layer. The hosts keep circling the same practical question: what context should an agent see, what should it be allowed to change, and where should the human review happen?</p>
+            <p>The answer is not one tool. It is a system: local models for experiments, cloud models for hard reasoning, agents with narrow lanes, shared memory in Notion or a CRM, and a review loop that catches the messy parts before they touch customers or revenue data.</p>
+          </div>
+          <aside class="fact-panel" aria-label="Episode facts">
+            <div class="fact-row"><span class="fact-key">Episode</span><span class="fact-value">001</span></div>
+            <div class="fact-row"><span class="fact-key">Runtime</span><span class="fact-value">1:25:51</span></div>
+            <div class="fact-row"><span class="fact-key">Core topic</span><span class="fact-value teal">Company brain</span></div>
+            <div class="fact-row"><span class="fact-key">Format</span><span class="fact-value">Tactical notes</span></div>
+            <div class="chips">
+              <span class="chip">Agents</span>
+              <span class="chip">Ollama</span>
+              <span class="chip">Mac mini</span>
+              <span class="chip">Hermes</span>
+              <span class="chip">OpenClaw</span>
+              <span class="chip">MCP</span>
+              <span class="chip">Notion</span>
+              <span class="chip">CRM</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="notes-section" id="takeaways">
+      <div class="wrap">
+        <div class="label-row"><span class="eyebrow">Key takeaways</span><span class="rule"></span></div>
+        <div class="section-head">
+          <div>
+            <h2>Five things to <em>steal</em> from this episode.</h2>
           </div>
         </div>
-
-        <aside class="notes-aside" aria-label="Episode one quick links">
-          <h2>Quick jumps</h2>
-          <a href="#local-models">Local model lab</a>
-          <a href="#agent-bench">Agent bench</a>
-          <a href="#context-map">Context map</a>
-          <a href="#company-brain">Company brain</a>
-          <a href="#learning-loop">Learning loop</a>
-          <a href="#resources">Resource links</a>
-        </aside>
+        <div class="takeaway-grid">
+          <article class="takeaway-card">
+            <span>01</span>
+            <div>
+              <h3>Local AI is a fallback lane.</h3>
+              <p>A Mac mini with Ollama is useful for privacy, offline experiments, and cheap iteration. It is not automatically better than frontier cloud models.</p>
+            </div>
+          </article>
+          <article class="takeaway-card">
+            <span>02</span>
+            <div>
+              <h3>The agent stack is context plumbing.</h3>
+              <p>Hermes, OpenClaw, terminals, Telegram, MCPs, and APIs only work when each agent has a clear lane and a clear source of truth.</p>
+            </div>
+          </article>
+          <article class="takeaway-card">
+            <span>03</span>
+            <div>
+              <h3>Memory needs backups.</h3>
+              <p>A company brain becomes fragile when agents can bulk-edit records. Backups and approval gates matter before the first destructive workflow.</p>
+            </div>
+          </article>
+          <article class="takeaway-card">
+            <span>04</span>
+            <div>
+              <h3>Review is the bottleneck.</h3>
+              <p>More agents create more output. The system needs statuses, owners, summaries, changed-record logs, and one place to inspect the work.</p>
+            </div>
+          </article>
+          <article class="takeaway-card">
+            <span>05</span>
+            <div>
+              <h3>Taste does not get automated away.</h3>
+              <p>The best workflows use AI to compress blank-page work while keeping human judgment around tone, usefulness, risk, and product quality.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="notes-section alt" id="guides">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Tactical guides</p>
-            <h2>What to try after listening.</h2>
-          </div>
-          <span class="meta-pill">Transcript-derived</span>
-        </div>
-
+        <div class="label-row"><span class="eyebrow">Tactical guides</span><span class="rule"></span><span class="mono ink-faint">What to try next</span></div>
         <div class="guide-grid">
           <article class="guide-card" id="local-models">
             <span>Guide 01</span>
             <h3>Set up a local model lab.</h3>
             <p>Use local AI for offline fallback, private drafts, repeatable tests, and learning how model quality feels at different sizes.</p>
             <ol class="steps-list">
-              <li>Pick one always-on machine, such as a Mac mini or spare laptop, and keep the experiment scoped.</li>
+              <li>Pick one always-on machine, such as a Mac mini or spare laptop.</li>
               <li>Install Ollama and leave enough disk space for model files.</li>
-              <li>Start with one small model family, then test the same prompt against cloud models.</li>
-              <li>Use local models for low-risk tasks: summarizing your own notes, drafting checklists, or testing automations.</li>
-              <li>Escalate to a frontier cloud model when the task needs deep reasoning, high reliability, or current web context.</li>
+              <li>Start with one small model family and test the same prompt against cloud models.</li>
+              <li>Use local models for low-risk work: summaries, drafts, checklists, and automation tests.</li>
+              <li>Escalate to a frontier model when the task needs deep reasoning or current web context.</li>
             </ol>
           </article>
 
           <article class="guide-card" id="agent-bench">
             <span>Guide 02</span>
             <h3>Build an agent bench before an agent army.</h3>
-            <p>The episode shows the cost of spinning up multiple agents without a clean assignment model. Start with named roles.</p>
+            <p>Start with named roles instead of spinning up more surfaces than you can review.</p>
             <ol class="steps-list">
               <li>Name each agent and write its job in one sentence.</li>
-              <li>Assign one primary surface: terminal, Telegram, Discord, Slack, or desktop.</li>
-              <li>Give each agent a clear lane, such as CRM cleanup, analytics reports, content research, or inbox triage.</li>
-              <li>Keep a daily review page where the agent must summarize what it changed and where outputs live.</li>
-              <li>Retire workflows that feel cool but do not create reviewed value.</li>
+              <li>Assign one primary surface: terminal, Telegram, Slack, browser, or desktop.</li>
+              <li>Give each agent one lane: CRM cleanup, analytics, research, or inbox triage.</li>
+              <li>Require a daily review note with changes, outputs, and unresolved questions.</li>
+              <li>Retire workflows that feel impressive but do not create reviewed value.</li>
             </ol>
           </article>
 
           <article class="guide-card" id="context-map">
             <span>Guide 03</span>
             <h3>Create a context and permissions map.</h3>
-            <p>Most friction came from reconnecting Google Analytics, Google Ads, Search Console, files, skills, MCPs, and API access across machines.</p>
+            <p>Most friction comes from reconnecting analytics, ads, files, skills, MCPs, APIs, and local folders across machines.</p>
             <ol class="steps-list">
               <li>List every system an agent needs to read, write, or never touch.</li>
               <li>Split access into read-only, draft-only, and approved-write permissions.</li>
-              <li>Document which MCP servers, APIs, keys, and local folders power each workflow.</li>
+              <li>Document which MCP servers, APIs, keys, and folders power each workflow.</li>
               <li>Keep credentials outside prompts and store setup steps in project docs.</li>
-              <li>Run a dry test before giving an agent live write access to customer or revenue data.</li>
+              <li>Run a dry test before live write access to customer or revenue data.</li>
             </ol>
           </article>
 
           <article class="guide-card" id="company-brain">
             <span>Guide 04</span>
             <h3>Turn Notion and CRM data into a company brain.</h3>
-            <p>The strongest business workflow in the episode is simple: capture calls, clean records, preserve tags, and make the next action obvious.</p>
+            <p>The strongest business workflow is simple: capture calls, clean records, preserve tags, and make the next action obvious.</p>
             <ol class="steps-list">
-              <li>Choose a source of truth for contacts, companies, notes, tasks, and call transcripts.</li>
+              <li>Choose a source of truth for contacts, companies, notes, tasks, and transcripts.</li>
               <li>Define required fields before an agent can update a record.</li>
-              <li>Back up the database weekly before letting agents perform bulk edits.</li>
+              <li>Back up the database before letting agents perform bulk edits.</li>
               <li>Use agents to draft field updates, next steps, and daily work queues.</li>
-              <li>Review destructive changes, especially tag edits, ownership changes, and status updates.</li>
+              <li>Review destructive changes, especially tags, owners, and statuses.</li>
             </ol>
           </article>
 
           <article class="guide-card" id="learning-loop">
             <span>Guide 05</span>
             <h3>Use AI to learn without outsourcing taste.</h3>
-            <p>The show connects content creation, book notes, founder clips, and personal libraries as ways to absorb ideas more deeply.</p>
+            <p>The show connects book notes, founder clips, and personal libraries as ways to absorb ideas more deeply.</p>
             <ol class="steps-list">
               <li>Collect books, articles, transcripts, and clips that already matter to you.</li>
               <li>Ask an AI assistant to create summaries, themes, and retrieval tags.</li>
               <li>Query the library with real situations: a sales problem, design decision, or training plan.</li>
-              <li>Read or watch the original source when the answer matters.</li>
+              <li>Return to the original source when the answer matters.</li>
               <li>Publish or teach the idea back to force active understanding.</li>
             </ol>
           </article>
 
-          <article class="guide-card">
+          <article class="guide-card" id="review-loop">
             <span>Guide 06</span>
             <h3>Build a review loop for token-heavy work.</h3>
-            <p>Running many agents creates more output than one person can casually inspect. The page-level lesson is to design the review surface first.</p>
+            <p>Running many agents creates more output than one person can casually inspect. Design the review surface first.</p>
             <ol class="steps-list">
               <li>Give every agent output a destination, owner, and due date.</li>
-              <li>Require summaries that include changed files, changed records, and unresolved questions.</li>
+              <li>Require summaries with changed files, changed records, and open questions.</li>
               <li>Mark outputs as experiment, draft, reviewed, or shipped.</li>
-              <li>Compare multiple agents on the same task only when the learning is worth the review cost.</li>
+              <li>Compare agents on the same task only when the learning is worth the review cost.</li>
               <li>Use failures as data: what permission, context, or instruction was missing?</li>
             </ol>
           </article>
@@ -235,165 +285,70 @@
     </section>
 
     <section class="notes-section" id="chapters">
-      <div class="wrap notes-layout">
-        <div class="notes-main">
-          <div class="section-head">
-            <div>
-              <p class="eyebrow">Chapters</p>
-              <h2>Timestamped map of the episode.</h2>
-            </div>
-          </div>
-
-          <div class="chapter-list">
-            <article class="chapter-row">
-              <span class="chapter-time">00:00</span>
-              <div>
-                <h3>Mac mini, laptops, and where agents should live</h3>
-                <p>The hosts open with a practical hardware question: how to split daily work across a Mac mini, laptop, and an older machine running agents.</p>
-              </div>
-            </article>
-            <article class="chapter-row">
-              <span class="chapter-time">01:59</span>
-              <div>
-                <h3>Local models, Ollama, and offline fallback</h3>
-                <p>Local models are framed as useful, magical, and cheaper to run, but not always competitive with the latest subscription or API models.</p>
-              </div>
-            </article>
-            <article class="chapter-row">
-              <span class="chapter-time">04:06</span>
-              <div>
-                <h3>Terminal workflows and the duct-tape engine phase</h3>
-                <p>Multiple terminals can unlock a lot of work, but the current state still depends on manual triggering and personal discipline.</p>
-              </div>
-            </article>
-            <article class="chapter-row">
-              <span class="chapter-time">05:10</span>
-              <div>
-                <h3>CRM cleanup and daily operating routines</h3>
-                <p>Agents can organize records, pull notes from calls, and prepare next-day work, but reliable automation needs a clean trigger and review loop.</p>
-              </div>
-            </article>
-            <article class="chapter-row">
-              <span class="chapter-time">06:03</span>
-              <div>
-                <h3>Context management across tools, APIs, and MCPs</h3>
-                <p>The central friction: every new agent surface needs access to the right data, skills, tools, and permissions.</p>
-              </div>
-            </article>
-            <article class="chapter-row">
-              <span class="chapter-time">08:12</span>
-              <div>
-                <h3>Hermes versus OpenClaw across machines</h3>
-                <p>The conversation turns into a real multi-agent inventory: which agent should do which job, on which machine, with which context?</p>
-              </div>
-            </article>
-            <article class="chapter-row">
-              <span class="chapter-time">10:55</span>
-              <div>
-                <h3>Notion, Obsidian, and the cloud company brain</h3>
-                <p>Notion is discussed as a collaborative cloud brain, while Obsidian represents a more local personal knowledge path.</p>
-              </div>
-            </article>
-            <article class="chapter-row">
-              <span class="chapter-time">15:10</span>
-              <div>
-                <h3>Backups after an AI wipes CRM tags</h3>
-                <p>A concrete failure story makes the risk obvious: AI can help with databases, but bulk edits need backups and permission gates.</p>
-              </div>
-            </article>
-            <article class="chapter-row">
-              <span class="chapter-time">18:41</span>
-              <div>
-                <h3>Content creation as active learning</h3>
-                <p>Founder clips and social posts become a study system: rewrite the idea, edit it, publish it, and let discussion sharpen understanding.</p>
-              </div>
-            </article>
-            <article class="chapter-row">
-              <span class="chapter-time">24:34</span>
-              <div>
-                <h3>AI as a study partner and ambition multiplier</h3>
-                <p>The hosts compare AI tutors, YouTube learning, student incentives, and the risk that AI widens the gap between active builders and passive users.</p>
-              </div>
-            </article>
-            <article class="chapter-row">
-              <span class="chapter-time">35:40</span>
-              <div>
-                <h3>Personal book libraries and second-brain retrieval</h3>
-                <p>Will describes turning photos of physical books into a queryable library that recommends chapters for real situations.</p>
-              </div>
-            </article>
-            <article class="chapter-row">
-              <span class="chapter-time">53:13</span>
-              <div>
-                <h3>Token spend, agent experiments, and report generation</h3>
-                <p>Enzo explains how much token usage goes into testing agents, comparing outputs, connecting data sources, and generating reports.</p>
-              </div>
-            </article>
-            <article class="chapter-row">
-              <span class="chapter-time">57:28</span>
-              <div>
-                <h3>Balancing exploration with reviewed business value</h3>
-                <p>The cost of output appears again: more agent work means more places to inspect, more drafts, and more need for curation.</p>
-              </div>
-            </article>
-            <article class="chapter-row">
-              <span class="chapter-time">1:03:48</span>
-              <div>
-                <h3>Replit, Cursor, Claude Code, and the coding aha moment</h3>
-                <p>The conversation moves from early app generation to full website changes driven by transcripts, sales context, and agent skills.</p>
-              </div>
-            </article>
-            <article class="chapter-row">
-              <span class="chapter-time">1:04:52</span>
-              <div>
-                <h3>Taste, design, and permissionless product teams</h3>
-                <p>AI collapses the distance between PM, designer, and engineer, but human taste and lived experience still shape the best products.</p>
-              </div>
-            </article>
-            <article class="chapter-row">
-              <span class="chapter-time">1:15:22</span>
-              <div>
-                <h3>First principles, debugging, and the failure zone</h3>
-                <p>The closing section connects hardware debugging, athletics, first principles thinking, and why people who can tolerate iteration will win with AI.</p>
-              </div>
-            </article>
-          </div>
+      <div class="wrap">
+        <div class="label-row"><span class="eyebrow">Chapters</span><span class="rule"></span><span class="mono ink-faint">Timestamp map</span></div>
+        <div class="chapter-list">
+          <article class="chapter-row"><span class="chapter-time">00:00</span><div><h3>Mac mini, laptops, and where agents should live</h3><p>How to split daily work across a Mac mini, laptop, and an older machine running agents.</p></div><span class="chapter-arrow">↗</span></article>
+          <article class="chapter-row"><span class="chapter-time">01:59</span><div><h3>Local models, Ollama, and offline fallback</h3><p>Local models are useful and magical, but not always competitive with frontier cloud models.</p></div><span class="chapter-arrow">↗</span></article>
+          <article class="chapter-row"><span class="chapter-time">04:06</span><div><h3>Terminal workflows and the duct-tape engine phase</h3><p>Multiple terminals unlock work, but the current state still depends on manual triggering and discipline.</p></div><span class="chapter-arrow">↗</span></article>
+          <article class="chapter-row"><span class="chapter-time">05:10</span><div><h3>CRM cleanup and daily operating routines</h3><p>Agents can organize records, pull call notes, and prepare next-day work when review is designed in.</p></div><span class="chapter-arrow">↗</span></article>
+          <article class="chapter-row"><span class="chapter-time">06:03</span><div><h3>Context management across tools, APIs, and MCPs</h3><p>The central friction: every new agent surface needs the right data, skills, tools, and permissions.</p></div><span class="chapter-arrow">↗</span></article>
+          <article class="chapter-row"><span class="chapter-time">08:12</span><div><h3>Hermes versus OpenClaw across machines</h3><p>A real multi-agent inventory: which agent should do which job, on which machine, with which context?</p></div><span class="chapter-arrow">↗</span></article>
+          <article class="chapter-row"><span class="chapter-time">10:55</span><div><h3>Notion, Obsidian, and the cloud company brain</h3><p>Notion becomes collaborative cloud memory while Obsidian represents a local personal knowledge path.</p></div><span class="chapter-arrow">↗</span></article>
+          <article class="chapter-row"><span class="chapter-time">15:10</span><div><h3>Backups after an AI wipes CRM tags</h3><p>A concrete failure story makes the risk obvious: bulk database edits need backups and gates.</p></div><span class="chapter-arrow">↗</span></article>
+          <article class="chapter-row"><span class="chapter-time">18:41</span><div><h3>Content creation as active learning</h3><p>Founder clips and posts become a study system: rewrite, edit, publish, and learn through feedback.</p></div><span class="chapter-arrow">↗</span></article>
+          <article class="chapter-row"><span class="chapter-time">24:34</span><div><h3>AI as a study partner and ambition multiplier</h3><p>AI tutors, YouTube learning, student incentives, and the widening gap between builders and passive users.</p></div><span class="chapter-arrow">↗</span></article>
+          <article class="chapter-row"><span class="chapter-time">35:40</span><div><h3>Personal book libraries and second-brain retrieval</h3><p>Turning photos of physical books into a queryable library that recommends chapters for real situations.</p></div><span class="chapter-arrow">↗</span></article>
+          <article class="chapter-row"><span class="chapter-time">53:13</span><div><h3>Token spend, agent experiments, and report generation</h3><p>Testing agents, comparing outputs, connecting data sources, and generating reports costs real review time.</p></div><span class="chapter-arrow">↗</span></article>
+          <article class="chapter-row"><span class="chapter-time">57:28</span><div><h3>Balancing exploration with reviewed business value</h3><p>More agent work means more places to inspect, more drafts, and more need for curation.</p></div><span class="chapter-arrow">↗</span></article>
+          <article class="chapter-row"><span class="chapter-time">1:03:48</span><div><h3>Replit, Cursor, Claude Code, and the coding aha moment</h3><p>From early app generation to full website changes driven by transcripts, sales context, and agent skills.</p></div><span class="chapter-arrow">↗</span></article>
+          <article class="chapter-row"><span class="chapter-time">1:04:52</span><div><h3>Taste, design, and permissionless product teams</h3><p>AI collapses the distance between PM, designer, and engineer, while human taste shapes the best products.</p></div><span class="chapter-arrow">↗</span></article>
+          <article class="chapter-row"><span class="chapter-time">1:15:22</span><div><h3>First principles, debugging, and the failure zone</h3><p>Hardware debugging, athletics, and why people who can tolerate iteration will win with AI.</p></div><span class="chapter-arrow">↗</span></article>
         </div>
-
-        <aside class="notes-aside" aria-label="Transcript note">
-          <h2>Transcript basis</h2>
-          <p>These notes were built from the attached episode 1 transcript and then organized into tactical guides for listeners.</p>
-        </aside>
       </div>
     </section>
 
     <section class="notes-section alt" id="resources">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Resource links</p>
-            <h2>Tools and concepts mentioned in the episode.</h2>
+        <div class="label-row"><span class="eyebrow">The stack</span><span class="rule"></span><span class="mono ink-faint">Tools & concepts</span></div>
+        <div class="resource-feature">
+          <div class="resource-feature-body">
+            <div class="resource-head">
+              <div class="resource-icon">llm</div>
+              <div>
+                <h3>Ollama + Mac mini</h3>
+                <div class="resource-cat">Local models · private fallback</div>
+              </div>
+            </div>
+            <p>The local-model thread is the most concrete place to start: use a small always-on machine for private drafts, repeatable prompts, and cheap experiments, then compare the result against frontier models before trusting it for hard work.</p>
+            <div class="resource-links">
+              <a class="resource-link solid" href="https://ollama.com/" target="_blank" rel="noreferrer">Open Ollama</a>
+              <a class="resource-link" href="https://docs.ollama.com/macos" target="_blank" rel="noreferrer">macOS docs</a>
+              <a class="resource-link" href="https://www.apple.com/mac-mini/" target="_blank" rel="noreferrer">Mac mini</a>
+            </div>
           </div>
-          <span class="meta-pill">Official links preferred</span>
+          <div class="resource-visual" aria-hidden="true">
+            <div class="resource-terminal">
+              <pre>shoreline@local
+ollama run qwen
+
+task:
+  summarize notes
+  draft checklist
+  compare cloud output
+
+rule:
+  low risk first
+  review before write</pre>
+            </div>
+          </div>
         </div>
 
         <div class="resource-list">
           <article class="resource-note">
-            <span>Local models</span>
-            <h3>Ollama</h3>
-            <p>Run and manage local models on macOS. Useful for offline experiments and private local workflows.</p>
-            <a class="text-link" href="https://docs.ollama.com/macos" target="_blank" rel="noreferrer">Open Ollama macOS docs</a>
-          </article>
-          <article class="resource-note">
-            <span>Hardware</span>
-            <h3>Mac mini</h3>
-            <p>The always-on local compute idea in the episode: a small desktop that can host local models, agents, or background jobs.</p>
-            <a class="text-link" href="https://www.apple.com/mac-mini/" target="_blank" rel="noreferrer">Open Apple Mac mini</a>
-          </article>
-          <article class="resource-note">
             <span>Agent framework</span>
             <h3>Hermes Agent</h3>
-            <p>A self-hosted agent framework from Nous Research with memory, skills, messaging surfaces, and scheduled work.</p>
+            <p>A self-hosted agent framework reference for memory, skills, messaging surfaces, and scheduled work.</p>
             <a class="text-link" href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noreferrer">Open Hermes Agent</a>
           </article>
           <article class="resource-note">
@@ -403,15 +358,15 @@
             <a class="text-link" href="https://openclaw.ai/" target="_blank" rel="noreferrer">Open OpenClaw</a>
           </article>
           <article class="resource-note">
-            <span>Context protocol</span>
+            <span>Protocol</span>
             <h3>Model Context Protocol</h3>
-            <p>MCP is the shared language for connecting AI apps to tools, resources, prompts, and external systems.</p>
-            <a class="text-link" href="https://modelcontextprotocol.io/docs/learn/architecture" target="_blank" rel="noreferrer">Open MCP architecture</a>
+            <p>The shared language for connecting AI apps to tools, resources, prompts, and external systems.</p>
+            <a class="text-link" href="https://modelcontextprotocol.io/docs/learn/architecture" target="_blank" rel="noreferrer">Open MCP docs</a>
           </article>
           <article class="resource-note">
             <span>Company brain</span>
             <h3>Notion</h3>
-            <p>The episode treats Notion as a practical cloud workspace for notes, CRM-like workflows, and collaborative company memory.</p>
+            <p>A practical cloud workspace for notes, CRM-like workflows, collaborative memory, and agent-readable context.</p>
             <a class="text-link" href="https://www.notion.com/product/ai" target="_blank" rel="noreferrer">Open Notion AI</a>
           </article>
           <article class="resource-note">
@@ -421,28 +376,16 @@
             <a class="text-link" href="https://obsidian.md/" target="_blank" rel="noreferrer">Open Obsidian</a>
           </article>
           <article class="resource-note">
-            <span>Model family</span>
-            <h3>Qwen</h3>
-            <p>The local-model thread mentions a Qwen-style model as an example of the smaller open models worth testing locally.</p>
-            <a class="text-link" href="https://huggingface.co/Qwen" target="_blank" rel="noreferrer">Open Qwen on Hugging Face</a>
-          </article>
-          <article class="resource-note">
-            <span>Coding agents</span>
+            <span>Coding agent</span>
             <h3>Claude Code</h3>
-            <p>Used as a reference for transcript-to-website implementation and agentic coding workflows.</p>
+            <p>A reference for transcript-to-website implementation and agentic coding workflows.</p>
             <a class="text-link" href="https://code.claude.com/docs/en/overview" target="_blank" rel="noreferrer">Open Claude Code docs</a>
           </article>
           <article class="resource-note">
             <span>Idea to app</span>
             <h3>Replit Agent</h3>
-            <p>The episode's first big coding "aha" moment: prompt to working app with a browser-based agent.</p>
+            <p>The first big coding aha moment: prompt to working app with a browser-based agent.</p>
             <a class="text-link" href="https://docs.replit.com/core-concepts/agent/" target="_blank" rel="noreferrer">Open Replit Agent docs</a>
-          </article>
-          <article class="resource-note">
-            <span>AI editor</span>
-            <h3>Cursor</h3>
-            <p>A reference point for how quickly AI coding tools changed from small edits to multi-file agentic work.</p>
-            <a class="text-link" href="https://docs.cursor.com/" target="_blank" rel="noreferrer">Open Cursor docs</a>
           </article>
           <article class="resource-note">
             <span>Model routing</span>
@@ -450,73 +393,54 @@
             <p>A useful follow-up for the token and provider-routing thread that continues into later Shoreline episodes.</p>
             <a class="text-link" href="https://openrouter.ai/docs/api/reference/overview" target="_blank" rel="noreferrer">Open OpenRouter docs</a>
           </article>
-          <article class="resource-note">
-            <span>Concept</span>
-            <h3>First principles debugging</h3>
-            <p>The closing lesson: understand the system deeply enough to find the root cause, then use AI to speed up iteration.</p>
-            <a class="text-link" href="#chapters">Jump to closing chapter</a>
-          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="notes-section" id="references">
+      <div class="wrap">
+        <div class="label-row"><span class="eyebrow">Links & references</span><span class="rule"></span></div>
+        <div class="reference-list">
+          <a class="reference-row" href="https://www.youtube.com/watch?v=VUoDvinLPl4" target="_blank" rel="noreferrer"><span class="reference-type">Episode</span><span class="reference-title">Watch the full episode <span>— YouTube</span></span><span class="chapter-arrow">↗</span></a>
+          <a class="reference-row" href="#local-models"><span class="reference-type">Guide</span><span class="reference-title">Set up a local model lab <span>— Mac mini, Ollama, model tests</span></span><span class="chapter-arrow">↗</span></a>
+          <a class="reference-row" href="#context-map"><span class="reference-type">Guide</span><span class="reference-title">Create a context and permissions map <span>— agent access design</span></span><span class="chapter-arrow">↗</span></a>
+          <a class="reference-row" href="#company-brain"><span class="reference-type">Guide</span><span class="reference-title">Turn Notion and CRM data into a company brain <span>— source-of-truth workflow</span></span><span class="chapter-arrow">↗</span></a>
+          <a class="reference-row" href="../index.html#resources"><span class="reference-type">Index</span><span class="reference-title">Return to the Shoreline resource library <span>— homepage</span></span><span class="chapter-arrow">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="notes-section">
+      <div class="wrap">
+        <div class="quote-panel">
+          <span class="qmark">“</span>
+          <p>The useful AI workflow is not ask a chatbot. It is source of truth, agent access, task routing, review, backup, and a human who understands the texture of the work.</p>
+          <cite>Shoreline Ep. 1 · distilled operating principle</cite>
         </div>
       </div>
     </section>
 
     <section class="notes-section dark">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Listener checklist</p>
-            <h2>A practical first-week implementation plan.</h2>
-          </div>
-        </div>
-
+        <div class="label-row"><span class="eyebrow">Listener checklist</span><span class="rule"></span></div>
         <div class="guide-grid">
-          <article class="guide-card">
-            <span>Day 1</span>
-            <h3>Pick one source of truth.</h3>
-            <p>Choose the workspace where important notes, calls, contacts, and decisions should live. Do not automate across five systems yet.</p>
-          </article>
-          <article class="guide-card">
-            <span>Day 2</span>
-            <h3>Back it up.</h3>
-            <p>Export or snapshot the database before asking an agent to edit anything at scale.</p>
-          </article>
-          <article class="guide-card">
-            <span>Day 3</span>
-            <h3>Connect one agent.</h3>
-            <p>Give the agent read access first, then ask it to produce a report about what it sees and what it would change.</p>
-          </article>
-          <article class="guide-card">
-            <span>Day 4</span>
-            <h3>Automate one repeatable routine.</h3>
-            <p>Choose something boring but useful: daily CRM cleanup, call-summary extraction, or a tomorrow work queue.</p>
-          </article>
-          <article class="guide-card">
-            <span>Day 5</span>
-            <h3>Review the agent like a teammate.</h3>
-            <p>Check what changed, where outputs landed, what it misunderstood, and what permissions should be tightened.</p>
-          </article>
-          <article class="guide-card">
-            <span>Day 6-7</span>
-            <h3>Decide what graduates.</h3>
-            <p>Promote useful workflows to scheduled work. Archive experiments that only created more review burden.</p>
-          </article>
+          <article class="guide-card"><span>Day 1</span><h3>Pick one source of truth.</h3><p>Choose where important notes, calls, contacts, and decisions should live. Do not automate across five systems yet.</p></article>
+          <article class="guide-card"><span>Day 2</span><h3>Back it up.</h3><p>Export or snapshot the database before asking an agent to edit anything at scale.</p></article>
+          <article class="guide-card"><span>Day 3</span><h3>Connect one agent.</h3><p>Give the agent read access first, then ask it to report what it sees and what it would change.</p></article>
+          <article class="guide-card"><span>Day 4</span><h3>Automate one boring routine.</h3><p>Choose daily CRM cleanup, call-summary extraction, or a tomorrow work queue.</p></article>
+          <article class="guide-card"><span>Day 5</span><h3>Review like a teammate.</h3><p>Check what changed, where outputs landed, what it misunderstood, and which permissions should tighten.</p></article>
+          <article class="guide-card"><span>Day 6-7</span><h3>Decide what graduates.</h3><p>Promote useful workflows to scheduled work. Archive experiments that only create more review burden.</p></article>
         </div>
       </div>
     </section>
 
     <section class="notes-section" id="related">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Keep listening</p>
-            <h2>Related Shoreline notes.</h2>
-          </div>
-        </div>
-
+        <div class="label-row"><span class="eyebrow">Keep listening</span><span class="rule"></span></div>
         <div class="related-grid">
           <a class="related-card" href="episode-2.html">
             <span>Ep. 2</span>
-            <h3>AI Workflow Automation for Sales, Prospecting, and Productivity</h3>
+            <h3>AI Workflow Automation for Sales</h3>
             <p>The sales and productivity automation follow-up.</p>
           </a>
           <a class="related-card" href="episode-3.html">

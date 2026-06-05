@@ -30,18 +30,18 @@
   <link rel="stylesheet" href="../assets/styles.css">
   <script src="../assets/script.js" defer></script>
 </head>
-<body>
+<body class="episode-notes">
   <div class="topbar">
     <div class="wrap topbar-inner">
       <span class="live-dot" aria-hidden="true"></span>
-      <span>Show notes: <b>Token Maxing and the Company Brain Era</b></span>
+      <span>Show notes: <b>Token maxing and company brain</b></span>
     </div>
   </div>
 
   <nav class="site-nav" aria-label="Primary navigation">
     <div class="wrap nav-inner">
       <a class="brand" href="../index.html#top" aria-label="Shoreline home">
-        <img src="../assets/images/shoreline-avatar.jpg" alt="" class="brand-mark">
+        <span class="brand-symbol">≈</span>
         <span>Shoreline</span>
       </a>
       <div class="nav-links">
@@ -55,72 +55,131 @@
   </nav>
 
   <main id="top">
-    <section class="episode-hero">
-      <div class="wrap episode-hero-grid">
-        <div>
-          <p class="eyebrow">Shoreline Ep. 3 / Starter notes</p>
-          <h1>Token maxing and the company brain era.</h1>
-          <p class="episode-summary">Episode 3 connects the Shoreline thesis to the economics of AI-native work: bigger context windows, more aggressive token use, better model routing, and tools that turn company memory into something agents can actually use.</p>
-          <div class="episode-meta-line" aria-label="Episode metadata">
-            <span class="meta-pill">39:35</span>
-            <span class="meta-pill">Token economics</span>
-            <span class="meta-pill">Tool comparisons</span>
-            <span class="meta-pill">Company brain</span>
-          </div>
-          <div class="episode-actions">
-            <a class="button button-teal" href="https://www.youtube.com/watch?v=Fzl7IqTfpsE" target="_blank" rel="noreferrer">Watch on YouTube</a>
-            <a class="button" href="#themes">Read themes</a>
-          </div>
+    <header class="episode-hero">
+      <div class="wrap">
+        <div class="episode-crumb">
+          <a href="../index.html#top">Shoreline</a>
+          <span>/</span>
+          <a href="../index.html#episodes">Episodes</a>
+          <span>/</span>
+          <span>Ep. 3</span>
         </div>
+        <div class="episode-hero-grid">
+          <div class="episode-head">
+            <div class="episode-key">
+              <span class="key-pill">EP 003</span>
+              <span>Season 01 · Token economics</span>
+            </div>
+            <h1>Token maxing and <em>the company brain.</em></h1>
+            <p class="episode-summary">A starter notes page for the Shoreline episode about bigger context windows, aggressive token use, model routing, and the way company memory changes how AI-native work feels.</p>
+            <div class="episode-meta-line" aria-label="Episode metadata">
+              <span class="meta-pill">39:35</span>
+              <span class="meta-pill">Starter notes</span>
+              <span class="meta-pill">Tool comparisons</span>
+              <span class="meta-pill">Transcript next</span>
+            </div>
 
-        <aside class="episode-player-panel" aria-label="Episode video">
-          <a class="video-frame" href="https://www.youtube.com/watch?v=Fzl7IqTfpsE" target="_blank" rel="noreferrer" aria-label="Watch Shoreline episode 3 on YouTube">
-            <img src="../assets/images/episode-3.jpg" alt="Episode 3 thumbnail for Shoreline">
-            <span class="play-disc" aria-hidden="true"></span>
-          </a>
-          <div class="episode-player-copy">
-            <p class="episode-kicker">Working theme</p>
-            <h2>The limiting factor moves from apps to context.</h2>
-            <p>When agents can read more, remember more, and route work across models, the product surface starts to look less like an app and more like an operating layer.</p>
+            <div class="mini-player" aria-label="Episode progress preview">
+              <span class="play-btn" aria-hidden="true">▶</span>
+              <span class="mini-wave" aria-hidden="true">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              </span>
+              <span class="ptime">00:00 / 39:35</span>
+            </div>
+            <div class="listen-mini">
+              <a href="https://www.youtube.com/watch?v=Fzl7IqTfpsE" target="_blank" rel="noreferrer">▸ YouTube</a>
+              <a href="https://podcasts.apple.com/us/podcast/shoreline/id1896869802?i=1000770876087" target="_blank" rel="noreferrer">▸ Apple</a>
+              <a href="https://open.spotify.com/episode/1qvT615rgvCYkKJWZBxaEk?si=ux8AdJCKQ2a9GMfgnpOq3w" target="_blank" rel="noreferrer">▸ Spotify</a>
+              <a href="#playbook">▸ Playbook</a>
+            </div>
           </div>
-        </aside>
+
+          <aside class="terminal-panel episode-terminal" aria-label="Animated Shoreline notes terminal">
+            <div class="terminal-bar">
+              <span class="terminal-dot dot-red"></span>
+              <span class="terminal-dot dot-yellow"></span>
+              <span class="terminal-dot dot-green"></span>
+              <span class="terminal-path">shoreline://notes/ep_003 - tokens</span>
+            </div>
+            <pre class="ascii-wave" aria-hidden="true"></pre>
+            <div class="terminal-foot">
+              <span>show notes · starter</span>
+              <span class="recording-dot"><i></i>published</span>
+            </div>
+          </aside>
+        </div>
       </div>
-    </section>
+    </header>
 
     <div class="notes-nav" aria-label="Show notes navigation">
       <div class="wrap notes-nav-inner">
+        <a href="#gist">Gist</a>
         <a href="#themes">Themes</a>
         <a href="#playbook">Playbook</a>
-        <a href="#resources">Resources</a>
-        <a href="#related">Related</a>
+        <a href="#comparison">Tool fit</a>
+        <a href="#resources">Tools</a>
+        <a href="#backlog">Backlog</a>
       </div>
     </div>
 
+    <section class="notes-section episode-gist" id="gist">
+      <div class="wrap">
+        <div class="label-row"><span class="eyebrow">The gist</span><span class="rule"></span></div>
+        <div class="gist-grid">
+          <div class="gist-body">
+            <p class="drop">Episode 3 is the bridge between technical AI tooling and the cultural shift around AI-native work. When context windows get larger and token spend gets cheaper relative to human time, the limiting factor shifts from "can the model answer?" to "did we give it the right company memory and review surface?"</p>
+            <p>The starter notes keep the page focused on verified episode themes: token maxing, company brain workflows, Codex vs Claude Code vs Cursor, model routing, OpenRouter, and the idea that apps may become less important than the operating layer around them.</p>
+          </div>
+          <aside class="fact-panel" aria-label="Episode facts">
+            <div class="fact-row"><span class="fact-key">Episode</span><span class="fact-value">003</span></div>
+            <div class="fact-row"><span class="fact-key">Runtime</span><span class="fact-value">39:35</span></div>
+            <div class="fact-row"><span class="fact-key">Core topic</span><span class="fact-value teal">Token maxing</span></div>
+            <div class="fact-row"><span class="fact-key">Status</span><span class="fact-value">Starter notes</span></div>
+            <div class="chips">
+              <span class="chip">Tokens</span>
+              <span class="chip">Company brain</span>
+              <span class="chip">Codex</span>
+              <span class="chip">Claude Code</span>
+              <span class="chip">Cursor</span>
+              <span class="chip">OpenRouter</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
     <section class="notes-section" id="themes">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Theme map</p>
-            <h2>The strongest ideas from the episode research.</h2>
-          </div>
-          <span class="meta-pill">Transcript expansion next</span>
-        </div>
-
+        <div class="label-row"><span class="eyebrow">Theme map</span><span class="rule"></span></div>
         <div class="takeaway-grid">
           <article class="takeaway-card">
             <span>01</span>
-            <h3>Token maxing</h3>
-            <p>Use the available context and subscription capacity aggressively when the output creates reviewed business value.</p>
+            <div>
+              <h3>Token maxing</h3>
+              <p>Spend more context and model effort when the output creates reviewed business value. Tokens become working capital.</p>
+            </div>
           </article>
           <article class="takeaway-card">
             <span>02</span>
-            <h3>Company brain era</h3>
-            <p>The best agent workflows depend on company memory that is organized, searchable, current, and safe to act on.</p>
+            <div>
+              <h3>Company brain era</h3>
+              <p>The best agent workflows depend on company memory that is organized, searchable, current, and safe to act on.</p>
+            </div>
           </article>
           <article class="takeaway-card">
             <span>03</span>
-            <h3>Codex vs Claude Code vs Cursor</h3>
-            <p>Tool choice becomes less about brand preference and more about which interface fits the work, context, and review loop.</p>
+            <div>
+              <h3>Tool choice is workflow fit.</h3>
+              <p>Codex, Claude Code, Cursor, and related tools should be judged by context fit, interface, review burden, and output quality.</p>
+            </div>
+          </article>
+          <article class="takeaway-card">
+            <span>04</span>
+            <div>
+              <h3>The app layer gets thinner.</h3>
+              <p>When agents can read, remember, and route work, the product surface starts to look more like an operating layer than a traditional app.</p>
+            </div>
           </article>
         </div>
       </div>
@@ -128,13 +187,7 @@
 
     <section class="notes-section alt" id="playbook">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Operator playbook</p>
-            <h2>How to think about tokens as working capital.</h2>
-          </div>
-        </div>
-
+        <div class="label-row"><span class="eyebrow">Operator playbook</span><span class="rule"></span><span class="mono ink-faint">Tokens as working capital</span></div>
         <div class="guide-grid">
           <article class="guide-card">
             <span>Step 01</span>
@@ -160,12 +213,50 @@
       </div>
     </section>
 
-    <section class="notes-section" id="resources">
+    <section class="notes-section" id="comparison">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Resource links</p>
-            <h2>Tools and concepts to follow from this episode.</h2>
+        <div class="label-row"><span class="eyebrow">Tool fit</span><span class="rule"></span></div>
+        <div class="chapter-list">
+          <article class="chapter-row"><span class="chapter-time">Codex</span><div><h3>Best when the work is repo-shaped</h3><p>Use for local codebase changes, verification loops, and repo-aware implementation work.</p></div><span class="chapter-arrow">↗</span></article>
+          <article class="chapter-row"><span class="chapter-time">Claude</span><div><h3>Best when the terminal is the workspace</h3><p>Use for agentic coding, command-line workflows, and long context development tasks.</p></div><span class="chapter-arrow">↗</span></article>
+          <article class="chapter-row"><span class="chapter-time">Cursor</span><div><h3>Best when editing stays interactive</h3><p>Use when the developer wants an AI-native editor with tight feedback while still steering line by line.</p></div><span class="chapter-arrow">↗</span></article>
+          <article class="chapter-row"><span class="chapter-time">Router</span><div><h3>Best when model choice is the experiment</h3><p>Use model-routing layers when you are comparing providers, costs, latency, and quality on the same workflow.</p></div><span class="chapter-arrow">↗</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="notes-section alt" id="resources">
+      <div class="wrap">
+        <div class="label-row"><span class="eyebrow">The stack</span><span class="rule"></span><span class="mono ink-faint">Tools & concepts</span></div>
+        <div class="resource-feature">
+          <div class="resource-feature-body">
+            <div class="resource-head">
+              <div class="resource-icon">tok</div>
+              <div>
+                <h3>OpenRouter + model routing</h3>
+                <div class="resource-cat">Provider choice · token economics</div>
+              </div>
+            </div>
+            <p>The token-maxing mindset gets more useful when you can route by job: cheap drafts, fast summaries, frontier reasoning, long-context review, and final human approval.</p>
+            <div class="resource-links">
+              <a class="resource-link solid" href="https://openrouter.ai/docs/api/reference/overview" target="_blank" rel="noreferrer">OpenRouter docs</a>
+              <a class="resource-link" href="https://docs.cursor.com/" target="_blank" rel="noreferrer">Cursor docs</a>
+              <a class="resource-link" href="https://code.claude.com/docs/en/overview" target="_blank" rel="noreferrer">Claude Code</a>
+            </div>
+          </div>
+          <div class="resource-visual" aria-hidden="true">
+            <div class="resource-terminal">
+              <pre>route(task)
+  draft -> cheap/fast
+  extract -> local/small
+  reason -> frontier
+  review -> strongest
+
+measure
+  quality
+  latency
+  review_cost</pre>
+            </div>
           </div>
         </div>
 
@@ -173,8 +264,8 @@
           <article class="resource-note">
             <span>Coding agent</span>
             <h3>Codex</h3>
-            <p>OpenAI's agentic coding and computer-use direction for building, reviewing, and iterating across software work.</p>
-            <a class="text-link" href="https://openai.com/index/codex-for-almost-everything/" target="_blank" rel="noreferrer">Open Codex update</a>
+            <p>OpenAI's agentic coding direction for building, reviewing, and iterating across software work.</p>
+            <a class="text-link" href="https://openai.com/index/codex/" target="_blank" rel="noreferrer">Open Codex</a>
           </article>
           <article class="resource-note">
             <span>Coding agent</span>
@@ -210,48 +301,31 @@
       </div>
     </section>
 
-    <section class="notes-section dark">
+    <section class="notes-section" id="backlog">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Transcript backlog</p>
-            <h2>What to add once the full transcript is available.</h2>
-          </div>
+        <div class="label-row"><span class="eyebrow">Transcript backlog</span><span class="rule"></span></div>
+        <div class="reference-list">
+          <a class="reference-row" href="https://www.youtube.com/watch?v=Fzl7IqTfpsE" target="_blank" rel="noreferrer"><span class="reference-type">Episode</span><span class="reference-title">Watch the full episode <span>— YouTube</span></span><span class="chapter-arrow">↗</span></a>
+          <a class="reference-row" href="#comparison"><span class="reference-type">Next pass</span><span class="reference-title">Add exact tool comparison quotes <span>— Codex, Claude Code, Cursor</span></span><span class="chapter-arrow">↗</span></a>
+          <a class="reference-row" href="#playbook"><span class="reference-type">Next pass</span><span class="reference-title">Add concrete token economics examples <span>— route, spend, review</span></span><span class="chapter-arrow">↗</span></a>
+          <a class="reference-row" href="../index.html#resources"><span class="reference-type">Index</span><span class="reference-title">Return to the Shoreline resource library <span>— homepage</span></span><span class="chapter-arrow">↗</span></a>
         </div>
-        <div class="guide-grid">
-          <article class="guide-card">
-            <span>01</span>
-            <h3>Precise chapters</h3>
-            <p>Add the exact chapter timestamps for company brain, universal agents, token costs, OpenRouter, and tool comparisons.</p>
-          </article>
-          <article class="guide-card">
-            <span>02</span>
-            <h3>Comparison table</h3>
-            <p>Turn Codex, Claude Code, Cursor, and any other tools discussed into a clear workflow-fit table.</p>
-          </article>
-          <article class="guide-card">
-            <span>03</span>
-            <h3>Token economics guide</h3>
-            <p>Add concrete advice for when to spend more tokens, when to route cheaper, and when local models are enough.</p>
-          </article>
-          <article class="guide-card">
-            <span>04</span>
-            <h3>Company brain examples</h3>
-            <p>Pull every concrete business-memory example into a tactical implementation section.</p>
-          </article>
+      </div>
+    </section>
+
+    <section class="notes-section">
+      <div class="wrap">
+        <div class="quote-panel">
+          <span class="qmark">“</span>
+          <p>The limiting factor moves from apps to context: what the agent can read, remember, route, and safely act on.</p>
+          <cite>Shoreline Ep. 3 · starter operating principle</cite>
         </div>
       </div>
     </section>
 
     <section class="notes-section" id="related">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Keep listening</p>
-            <h2>Related Shoreline notes.</h2>
-          </div>
-        </div>
-
+        <div class="label-row"><span class="eyebrow">Keep listening</span><span class="rule"></span></div>
         <div class="related-grid">
           <a class="related-card" href="episode-1.html">
             <span>Ep. 1</span>

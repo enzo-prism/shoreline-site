@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="../assets/styles.css">
   <script src="../assets/script.js" defer></script>
 </head>
-<body>
+<body class="episode-notes">
   <div class="topbar">
     <div class="wrap topbar-inner">
       <span class="live-dot" aria-hidden="true"></span>
@@ -41,7 +41,7 @@
   <nav class="site-nav" aria-label="Primary navigation">
     <div class="wrap nav-inner">
       <a class="brand" href="../index.html#top" aria-label="Shoreline home">
-        <img src="../assets/images/shoreline-avatar.jpg" alt="" class="brand-mark">
+        <span class="brand-symbol">≈</span>
         <span>Shoreline</span>
       </a>
       <div class="nav-links">
@@ -55,115 +55,209 @@
   </nav>
 
   <main id="top">
-    <section class="episode-hero">
-      <div class="wrap episode-hero-grid">
-        <div>
-          <p class="eyebrow">Shoreline Ep. 2 / Starter notes</p>
-          <h1>AI workflow automation for sales, prospecting, and productivity.</h1>
-          <p class="episode-summary">This starter page gives the episode a permanent home while the full transcript pass is pending. The page is organized around the verified episode theme: using AI to turn sales, prospecting, and daily productivity into repeatable operator workflows.</p>
-          <div class="episode-meta-line" aria-label="Episode metadata">
-            <span class="meta-pill">43:44</span>
-            <span class="meta-pill">Automation</span>
-            <span class="meta-pill">Sales systems</span>
-            <span class="meta-pill">Productivity</span>
-          </div>
-          <div class="episode-actions">
-            <a class="button button-teal" href="https://www.youtube.com/watch?v=hC9rO6xecUk" target="_blank" rel="noreferrer">Watch on YouTube</a>
-            <a class="button" href="#starter-playbook">Read starter playbook</a>
-          </div>
+    <header class="episode-hero">
+      <div class="wrap">
+        <div class="episode-crumb">
+          <a href="../index.html#top">Shoreline</a>
+          <span>/</span>
+          <a href="../index.html#episodes">Episodes</a>
+          <span>/</span>
+          <span>Ep. 2</span>
         </div>
+        <div class="episode-hero-grid">
+          <div class="episode-head">
+            <div class="episode-key">
+              <span class="key-pill">EP 002</span>
+              <span>Season 01 · Sales systems</span>
+            </div>
+            <h1>Sales work as <em>repeatable software.</em></h1>
+            <p class="episode-summary">A starter notes page for the sales, prospecting, and productivity automation episode. The page keeps the claims high-confidence while the full transcript pass is still pending.</p>
+            <div class="episode-meta-line" aria-label="Episode metadata">
+              <span class="meta-pill">43:44</span>
+              <span class="meta-pill">Starter notes</span>
+              <span class="meta-pill">Sales automation</span>
+              <span class="meta-pill">Transcript next</span>
+            </div>
 
-        <aside class="episode-player-panel" aria-label="Episode video">
-          <a class="video-frame" href="https://www.youtube.com/watch?v=hC9rO6xecUk" target="_blank" rel="noreferrer" aria-label="Watch Shoreline episode 2 on YouTube">
-            <img src="../assets/images/episode-2.jpg" alt="Episode 2 thumbnail for Shoreline">
-            <span class="play-disc" aria-hidden="true"></span>
-          </a>
-          <div class="episode-player-copy">
-            <p class="episode-kicker">Working theme</p>
-            <h2>Sales work becomes software when the steps are clear enough.</h2>
-            <p>The practical direction: capture the workflow, give AI the right context, let it draft and route work, then review before anything customer-facing ships.</p>
+            <div class="mini-player" aria-label="Episode progress preview">
+              <span class="play-btn" aria-hidden="true">▶</span>
+              <span class="mini-wave" aria-hidden="true">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              </span>
+              <span class="ptime">00:00 / 43:44</span>
+            </div>
+            <div class="listen-mini">
+              <a href="https://www.youtube.com/watch?v=hC9rO6xecUk" target="_blank" rel="noreferrer">▸ YouTube</a>
+              <a href="https://podcasts.apple.com/us/podcast/shoreline/id1896869802?i=1000770876087" target="_blank" rel="noreferrer">▸ Apple</a>
+              <a href="https://open.spotify.com/episode/1qvT615rgvCYkKJWZBxaEk?si=ux8AdJCKQ2a9GMfgnpOq3w" target="_blank" rel="noreferrer">▸ Spotify</a>
+              <a href="#playbook">▸ Playbook</a>
+            </div>
           </div>
-        </aside>
+
+          <aside class="terminal-panel episode-terminal" aria-label="Animated Shoreline notes terminal">
+            <div class="terminal-bar">
+              <span class="terminal-dot dot-red"></span>
+              <span class="terminal-dot dot-yellow"></span>
+              <span class="terminal-dot dot-green"></span>
+              <span class="terminal-path">shoreline://notes/ep_002 - sales_ops</span>
+            </div>
+            <pre class="ascii-wave" aria-hidden="true"></pre>
+            <div class="terminal-foot">
+              <span>show notes · starter</span>
+              <span class="recording-dot"><i></i>published</span>
+            </div>
+          </aside>
+        </div>
       </div>
-    </section>
+    </header>
 
     <div class="notes-nav" aria-label="Show notes navigation">
       <div class="wrap notes-nav-inner">
-        <a href="#starter-playbook">Playbook</a>
+        <a href="#gist">Gist</a>
+        <a href="#takeaways">Takeaways</a>
+        <a href="#playbook">Playbook</a>
         <a href="#workflow-map">Workflow map</a>
-        <a href="#resources">Resources</a>
-        <a href="#related">Related</a>
+        <a href="#resources">Tools</a>
+        <a href="#backlog">Backlog</a>
       </div>
     </div>
 
-    <section class="notes-section" id="starter-playbook">
-      <div class="wrap starter-grid">
-        <div class="starter-note">
-          <span>Transcript status</span>
-          <h3>Full notes pass pending.</h3>
-          <p>This page is intentionally honest: it uses verified public episode metadata and current Shoreline topic research, but it is waiting for a transcript before adding precise quotes, detailed chapters, and tool-by-tool claims.</p>
+    <section class="notes-section episode-gist" id="gist">
+      <div class="wrap">
+        <div class="label-row"><span class="eyebrow">The gist</span><span class="rule"></span></div>
+        <div class="gist-grid">
+          <div class="gist-body">
+            <p class="drop">This episode theme is about turning sales motion into repeatable operator workflow. The useful move is not "AI writes a cold email." It is mapping the path from lead source to follow-up, then letting AI draft the boring parts while a human still owns taste, timing, and claims.</p>
+            <p>The transcript expansion should add exact chapters and quotes. Until then, this page acts as a clean operating model for listeners: capture context, draft before action, review daily, and only automate what can be checked.</p>
+          </div>
+          <aside class="fact-panel" aria-label="Episode facts">
+            <div class="fact-row"><span class="fact-key">Episode</span><span class="fact-value">002</span></div>
+            <div class="fact-row"><span class="fact-key">Runtime</span><span class="fact-value">43:44</span></div>
+            <div class="fact-row"><span class="fact-key">Core topic</span><span class="fact-value teal">Sales automation</span></div>
+            <div class="fact-row"><span class="fact-key">Status</span><span class="fact-value">Starter notes</span></div>
+            <div class="chips">
+              <span class="chip">Prospecting</span>
+              <span class="chip">CRM</span>
+              <span class="chip">Lead workflows</span>
+              <span class="chip">Drafts</span>
+              <span class="chip">Review</span>
+              <span class="chip">Productivity</span>
+            </div>
+          </aside>
         </div>
+      </div>
+    </section>
+
+    <section class="notes-section" id="takeaways">
+      <div class="wrap">
+        <div class="label-row"><span class="eyebrow">Key takeaways</span><span class="rule"></span></div>
+        <div class="takeaway-grid">
+          <article class="takeaway-card">
+            <span>01</span>
+            <div>
+              <h3>Sales automation starts with the motion.</h3>
+              <p>Map how leads become opportunities before adding AI. The clearer the sequence, the safer the automation.</p>
+            </div>
+          </article>
+          <article class="takeaway-card">
+            <span>02</span>
+            <div>
+              <h3>Stable inputs beat clever prompts.</h3>
+              <p>Call transcripts, CRM fields, account pages, email history, and prior objections make the agent useful.</p>
+            </div>
+          </article>
+          <article class="takeaway-card">
+            <span>03</span>
+            <div>
+              <h3>Drafts come before actions.</h3>
+              <p>Let AI research, summarize, and draft. Keep sends, pricing, claims, and customer-facing notes behind review.</p>
+            </div>
+          </article>
+          <article class="takeaway-card">
+            <span>04</span>
+            <div>
+              <h3>The daily queue is the product.</h3>
+              <p>The best operator workflow ends in one reviewable queue: what changed, what is ready, and what needs human judgment.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="notes-section alt" id="playbook">
+      <div class="wrap">
+        <div class="label-row"><span class="eyebrow">Operator playbook</span><span class="rule"></span><span class="mono ink-faint">Starter model</span></div>
         <div class="guide-grid">
           <article class="guide-card">
             <span>Step 01</span>
             <h3>Map the sales motion.</h3>
-            <p>Write down the path from lead source to closed deal. Include research, enrichment, outreach, follow-up, CRM updates, and handoff points.</p>
+            <p>Write down the path from lead source to closed deal. Include research, enrichment, outreach, follow-up, CRM updates, and handoffs.</p>
           </article>
           <article class="guide-card">
             <span>Step 02</span>
             <h3>Find the repeatable inputs.</h3>
-            <p>Agents work best when they receive stable inputs: call transcripts, account pages, CRM fields, email history, and lead lists.</p>
+            <p>Agents work best when they receive stable inputs: account pages, CRM fields, meeting notes, email history, and lead lists.</p>
           </article>
           <article class="guide-card">
             <span>Step 03</span>
             <h3>Automate drafts before actions.</h3>
-            <p>Use AI to draft account notes, outreach copy, follow-up tasks, and meeting prep before letting it send or edit anything live.</p>
+            <p>Use AI to draft account notes, outreach copy, follow-up tasks, and meeting prep before it edits live records.</p>
           </article>
           <article class="guide-card">
             <span>Step 04</span>
             <h3>Review the queue daily.</h3>
-            <p>The operator still owns taste, priority, and customer context. AI should reduce the blank page, not remove judgment.</p>
+            <p>The operator owns tone, priority, and customer context. AI should reduce blank-page work, not remove judgment.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="notes-section alt" id="workflow-map">
+    <section class="notes-section" id="workflow-map">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Workflow map</p>
-            <h2>A starter automation model for listeners.</h2>
+        <div class="label-row"><span class="eyebrow">Workflow map</span><span class="rule"></span></div>
+        <div class="chapter-list">
+          <article class="chapter-row"><span class="chapter-time">Input</span><div><h3>Lead and account context</h3><p>Company pages, LinkedIn profiles, CRM fields, meeting notes, emails, call transcripts, and prior objections.</p></div><span class="chapter-arrow">↗</span></article>
+          <article class="chapter-row"><span class="chapter-time">Agent</span><div><h3>Research, summarize, draft</h3><p>Ask AI to research the account, summarize why it matters, draft outreach, and flag missing fields.</p></div><span class="chapter-arrow">↗</span></article>
+          <article class="chapter-row"><span class="chapter-time">Review</span><div><h3>Approve before sending</h3><p>Keep the human in the loop for tone, timing, claims, pricing, and customer-facing communication.</p></div><span class="chapter-arrow">↗</span></article>
+          <article class="chapter-row"><span class="chapter-time">Memory</span><div><h3>Write the result back</h3><p>After review, update the CRM and source of truth so the next agent run starts from better context.</p></div><span class="chapter-arrow">↗</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="notes-section alt" id="resources">
+      <div class="wrap">
+        <div class="label-row"><span class="eyebrow">The stack</span><span class="rule"></span><span class="mono ink-faint">Starting points</span></div>
+        <div class="resource-feature">
+          <div class="resource-feature-body">
+            <div class="resource-head">
+              <div class="resource-icon">mcp</div>
+              <div>
+                <h3>MCP + CRM context</h3>
+                <div class="resource-cat">Protocol · workflow access</div>
+              </div>
+            </div>
+            <p>The useful sales-agent pattern is simple: connect a model to trusted business context, let it draft work, and route everything through review before it touches a customer.</p>
+            <div class="resource-links">
+              <a class="resource-link solid" href="https://modelcontextprotocol.io/docs/learn/architecture" target="_blank" rel="noreferrer">MCP docs</a>
+              <a class="resource-link" href="https://developers.notion.com/" target="_blank" rel="noreferrer">Notion API</a>
+              <a class="resource-link" href="https://developers.google.com/analytics" target="_blank" rel="noreferrer">Analytics</a>
+            </div>
           </div>
-          <span class="meta-pill">Add transcript next</span>
-        </div>
+          <div class="resource-visual" aria-hidden="true">
+            <div class="resource-terminal">
+              <pre>sales_queue
+  lead research
+  account notes
+  draft follow-up
+  missing fields
 
-        <div class="takeaway-grid">
-          <article class="takeaway-card">
-            <span>Input</span>
-            <h3>Lead and account context</h3>
-            <p>Company pages, LinkedIn profiles, CRM fields, meeting notes, emails, call transcripts, and prior customer objections.</p>
-          </article>
-          <article class="takeaway-card">
-            <span>Agent work</span>
-            <h3>Research, summarize, draft</h3>
-            <p>Ask AI to research the account, summarize why it matters, draft outreach, and flag missing fields.</p>
-          </article>
-          <article class="takeaway-card">
-            <span>Human review</span>
-            <h3>Approve before sending</h3>
-            <p>Keep the human in the loop for tone, timing, claims, pricing, and any customer-facing communication.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="notes-section" id="resources">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Resource links</p>
-            <h2>Useful starting points for this episode theme.</h2>
+human gate
+  tone
+  claims
+  timing
+  send</pre>
+            </div>
           </div>
         </div>
 
@@ -193,7 +287,7 @@
             <a class="text-link" href="https://developers.google.com/google-ads/api/docs/start" target="_blank" rel="noreferrer">Open Google Ads API</a>
           </article>
           <article class="resource-note">
-            <span>Coding agents</span>
+            <span>Coding agent</span>
             <h3>Claude Code</h3>
             <p>A reference tool for building internal automations, reporting scripts, and workflow surfaces.</p>
             <a class="text-link" href="https://code.claude.com/docs/en/overview" target="_blank" rel="noreferrer">Open Claude Code docs</a>
@@ -208,48 +302,31 @@
       </div>
     </section>
 
-    <section class="notes-section dark">
+    <section class="notes-section" id="backlog">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Transcript backlog</p>
-            <h2>What to add once the full transcript is available.</h2>
-          </div>
+        <div class="label-row"><span class="eyebrow">Transcript backlog</span><span class="rule"></span></div>
+        <div class="reference-list">
+          <a class="reference-row" href="https://www.youtube.com/watch?v=hC9rO6xecUk" target="_blank" rel="noreferrer"><span class="reference-type">Episode</span><span class="reference-title">Watch the full episode <span>— YouTube</span></span><span class="chapter-arrow">↗</span></a>
+          <a class="reference-row" href="#playbook"><span class="reference-type">Next pass</span><span class="reference-title">Add precise chapters <span>— timestamps and exact tool mentions</span></span><span class="chapter-arrow">↗</span></a>
+          <a class="reference-row" href="#resources"><span class="reference-type">Next pass</span><span class="reference-title">Replace starter resources with exact references <span>— after transcript review</span></span><span class="chapter-arrow">↗</span></a>
+          <a class="reference-row" href="../index.html#episodes"><span class="reference-type">Archive</span><span class="reference-title">Return to all Shoreline episodes <span>— homepage</span></span><span class="chapter-arrow">↗</span></a>
         </div>
-        <div class="guide-grid">
-          <article class="guide-card">
-            <span>01</span>
-            <h3>Precise chapters</h3>
-            <p>Add timestamped sections with every major tool, workflow, and sales example from the conversation.</p>
-          </article>
-          <article class="guide-card">
-            <span>02</span>
-            <h3>Actual tool mentions</h3>
-            <p>Replace generic resource links with the exact products, APIs, and frameworks discussed in the episode.</p>
-          </article>
-          <article class="guide-card">
-            <span>03</span>
-            <h3>Operator checklist</h3>
-            <p>Turn the best examples into a copyable sales automation checklist.</p>
-          </article>
-          <article class="guide-card">
-            <span>04</span>
-            <h3>Related topic pages</h3>
-            <p>Promote sales prospecting and productivity systems into their own topic pages.</p>
-          </article>
+      </div>
+    </section>
+
+    <section class="notes-section">
+      <div class="wrap">
+        <div class="quote-panel">
+          <span class="qmark">“</span>
+          <p>Sales work becomes software when the steps are clear enough to inspect, repeat, and improve.</p>
+          <cite>Shoreline Ep. 2 · starter operating principle</cite>
         </div>
       </div>
     </section>
 
     <section class="notes-section" id="related">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Keep listening</p>
-            <h2>Related Shoreline notes.</h2>
-          </div>
-        </div>
-
+        <div class="label-row"><span class="eyebrow">Keep listening</span><span class="rule"></span></div>
         <div class="related-grid">
           <a class="related-card" href="episode-1.html">
             <span>Ep. 1</span>
