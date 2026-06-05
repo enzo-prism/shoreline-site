@@ -22,6 +22,10 @@ Vercel production at `https://shoreline-pod.com`.
   layout, better touch targets, reduced card height, and mobile breakpoint QA.
 - Added a local SVG icon system, richer hover states, keyboard focus rings,
   reduced-motion-aware animation polish, and premium card/video interactions.
+- Added official SVGL logo assets for supported platform and tool references,
+  including YouTube, Spotify, Apple, OpenAI, Claude, Cursor, Notion,
+  OpenRouter, Ollama, Obsidian, Telegram, Vercel, GitHub, Sentry, MCP,
+  Replit, Google Analytics, Salesforce, and Stripe.
 - Added individual show notes pages for episodes 1, 2, and 3.
 - Added transcript-derived tactical guides and resource links for episode 1.
 - Added transcript-derived tactical guides, chapters, and resource links for
@@ -64,7 +68,7 @@ Vercel production at `https://shoreline-pod.com`.
 - Topic atlas: company brain, AI agents, workflow automation, token economics,
   tool comparisons, human review
 - Resource index: Codex, Claude Code, Cursor, Notion, model routing, AI
-  prospecting systems
+  prospecting systems, with official logo badges where SVGL matches exist
 - Listen cards: YouTube, Apple Podcasts, and Spotify confirmed; RSS pending
   public-link verification
 
