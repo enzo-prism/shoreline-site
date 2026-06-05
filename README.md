@@ -9,7 +9,8 @@ content documentation that should guide future builds.
 
 - [index.html](index.html) - first static website pass.
 - [assets/styles.css](assets/styles.css) - visual system and responsive layout.
-- [assets/script.js](assets/script.js) - search/filter interactions.
+- [assets/script.js](assets/script.js) - search/filter interactions and the hero
+  waveform animation.
 - [assets/images](assets/images) - local Shoreline artwork and episode thumbnails.
 - [vercel.json](vercel.json) - static Vercel deployment config.
 

@@ -203,10 +203,10 @@ input {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.82fr);
-  gap: 48px;
+  grid-template-columns: minmax(0, 0.95fr) minmax(480px, 1.05fr);
+  gap: 58px;
   align-items: center;
-  padding: 52px 0 46px;
+  padding: 58px 0 52px;
 }
 
 .hero h1 {
@@ -291,26 +291,118 @@ input {
   color: var(--teal);
 }
 
-.latest-card {
+.terminal-panel {
+  height: clamp(390px, 34vw, 520px);
+  display: grid;
+  grid-template-rows: 56px minmax(0, 1fr) 66px;
   border: 1px solid var(--line-strong);
   border-radius: 6px;
   overflow: hidden;
-  background: var(--charcoal);
+  background: #15120d;
   color: var(--paper);
-  box-shadow: 0 28px 70px rgba(22, 19, 15, 0.22);
+  box-shadow: 0 34px 78px rgba(22, 19, 15, 0.22);
 }
 
-.latest-thumb {
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
+.terminal-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #211b14;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 0 22px;
 }
 
-.latest-body {
-  padding: 24px;
+.terminal-dot {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 14px;
+  border-radius: 50%;
 }
 
-.latest-body h2,
+.dot-red {
+  background: #d85b43;
+}
+
+.dot-yellow {
+  background: #e0ad52;
+}
+
+.dot-green {
+  background: #67a889;
+}
+
+.terminal-path {
+  min-width: 0;
+  margin-left: 20px;
+  overflow: hidden;
+  color: #8b8170;
+  font-family: var(--mono);
+  font-size: 16px;
+  letter-spacing: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ascii-wave {
+  min-width: 100%;
+  min-height: 0;
+  margin: 0;
+  padding: 26px 14px 18px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #7ed0b6 0%, #47aa8e 36%, #1f6f5c 70%, #0e3a2e 100%);
+  background-clip: text;
+  color: #5fb89e;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0;
+  line-height: 1.03;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: pre;
+  user-select: none;
+}
+
+.terminal-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #746c5f;
+  font-family: var(--mono);
+  font-size: 15px;
+  letter-spacing: 0;
+  padding: 0 22px;
+}
+
+.recording-dot {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #7ed0b6;
+}
+
+.recording-dot i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #7ed0b6;
+  box-shadow: 0 0 0 0 rgba(126, 208, 182, 0.55);
+  animation: terminal-pulse 2.4s infinite;
+}
+
+@keyframes terminal-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(126, 208, 182, 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 9px rgba(126, 208, 182, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(126, 208, 182, 0);
+  }
+}
+
 .note-stack h3,
 .topic-card h3,
 .resource-card h3,
@@ -320,18 +412,6 @@ input {
   font-size: 34px;
   font-weight: 400;
   line-height: 1;
-}
-
-.latest-body p:not(.episode-kicker) {
-  color: rgba(246, 241, 233, 0.72);
-}
-
-.card-actions {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  flex-wrap: wrap;
-  margin-top: 22px;
 }
 
 .signal-strip {
@@ -761,6 +841,10 @@ input {
     font-size: 58px;
   }
 
+  .ascii-wave {
+    font-size: 8px;
+  }
+
   .section-head h2,
   .about-grid h2 {
     font-size: 44px;
@@ -788,6 +872,37 @@ input {
     padding-top: 34px;
   }
 
+  .terminal-panel {
+    height: 330px;
+    grid-template-rows: 52px minmax(0, 1fr) 54px;
+  }
+
+  .terminal-bar {
+    gap: 8px;
+    padding: 0 16px;
+  }
+
+  .terminal-dot {
+    width: 12px;
+    height: 12px;
+    flex-basis: 12px;
+  }
+
+  .terminal-path {
+    margin-left: 10px;
+    font-size: 13px;
+  }
+
+  .ascii-wave {
+    padding: 18px 10px 12px;
+  }
+
+  .terminal-foot {
+    gap: 10px;
+    padding: 0 16px;
+    font-size: 11px;
+  }
+
   .hero h1 {
     font-size: 44px;
   }
@@ -813,10 +928,6 @@ input {
   .about-grid h2,
   .note-stack h3 {
     font-size: 38px;
-  }
-
-  .latest-body h2 {
-    font-size: 30px;
   }
 
   .note-grid,
@@ -850,9 +961,6 @@ input {
     width: 100%;
   }
 
-  .card-actions .button {
-    width: auto;
-  }
 }
 
 @media (max-width: 420px) {
@@ -862,6 +970,10 @@ input {
 
   .hero h1 {
     font-size: 38px;
+  }
+
+  .ascii-wave {
+    font-size: 7px;
   }
 
   .section-head h2,
