@@ -5,7 +5,7 @@ Last updated: June 5, 2026
 ## Current state
 
 The first static Shoreline website is built, pushed to GitHub, and deployed to
-Vercel production.
+Vercel production at `https://shoreline-pod.com`.
 
 ## Completed
 
@@ -18,7 +18,9 @@ Vercel production.
 - Verified desktop and mobile layout with browser screenshots.
 - Added Vercel static deployment config.
 - Created GitHub repo: `https://github.com/enzo-prism/shoreline-site`
-- Deployed production site: `https://shoreline-site-lac.vercel.app`
+- Deployed production site: `https://shoreline-pod.com`
+- Preserved Vercel alias: `https://shoreline-site-lac.vercel.app`
+- Updated canonical and Open Graph metadata to the custom domain.
 
 ## Current content
 
@@ -34,6 +36,7 @@ Vercel production.
 ## Next content tasks
 
 - Confirm RSS public URL.
+- Decide whether to add and redirect `www.shoreline-pod.com`.
 - Add transcript-derived chapters for each episode.
 - Convert topics and resources into structured content collections if the site
   moves to Astro, Next.js, or another framework.
