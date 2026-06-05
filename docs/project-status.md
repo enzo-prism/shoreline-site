@@ -19,6 +19,8 @@ Vercel production at `https://shoreline-pod.com`.
   waveform.
 - Added individual show notes pages for episodes 1, 2, and 3.
 - Added transcript-derived tactical guides and resource links for episode 1.
+- Added dedicated favicon assets and a minimal Open Graph image.
+- Shortened title tags and meta descriptions across the site.
 - Verified desktop and mobile layout with browser screenshots.
 - Added Vercel static deployment config.
 - Created GitHub repo: `https://github.com/enzo-prism/shoreline-site`

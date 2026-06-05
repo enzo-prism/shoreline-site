@@ -1,0 +1,14 @@
+{
+  "name": "Shoreline",
+  "short_name": "Shoreline",
+  "icons": [
+    {
+      "src": "/assets/images/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#f6f1e9",
+  "background_color": "#f6f1e9",
+  "display": "standalone"
+}

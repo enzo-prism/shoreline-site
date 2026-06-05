@@ -14,6 +14,8 @@ content documentation that should guide future builds.
 - [assets/script.js](assets/script.js) - search/filter interactions and the hero
   waveform animation.
 - [assets/images](assets/images) - local Shoreline artwork and episode thumbnails.
+- [assets/images/og-image.png](assets/images/og-image.png) - minimal social
+  preview image.
 - [vercel.json](vercel.json) - static Vercel deployment config.
 
 ## Current docs

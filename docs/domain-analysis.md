@@ -34,7 +34,7 @@ Checks run from `/Users/enzo/Projects/shoreline-site` on June 5, 2026:
 The custom domain should be the canonical URL. The site metadata should use:
 
 - `og:url`: `https://shoreline-pod.com`
-- `og:image`: `https://shoreline-pod.com/assets/images/shoreline-banner.png`
+- `og:image`: `https://shoreline-pod.com/assets/images/og-image.png`
 - canonical link: `https://shoreline-pod.com`
 
 The Vercel alias can remain useful for diagnostics, but it should not be the
