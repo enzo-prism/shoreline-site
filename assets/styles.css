@@ -1041,6 +1041,25 @@ input {
   color: rgba(246, 241, 233, 0.68);
 }
 
+.origin-note {
+  max-width: 520px;
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(246, 241, 233, 0.16);
+}
+
+.origin-note span {
+  color: var(--sea);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.origin-note p {
+  margin: 8px 0 0;
+}
+
 .host-panel {
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 6px;
@@ -2438,6 +2457,16 @@ input {
   .topic-pills button {
     min-height: 42px;
     padding-inline: 13px;
+  }
+
+  .searchable,
+  #latest,
+  #episodes,
+  #topics,
+  #resources,
+  #about,
+  #listen {
+    scroll-margin-top: 150px;
   }
 
   .section {

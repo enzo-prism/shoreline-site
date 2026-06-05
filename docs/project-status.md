@@ -18,6 +18,9 @@ Vercel production at `https://shoreline-pod.com`.
 - Replaced the homepage hero thumbnail with an animated terminal-style ASCII
   waveform.
 - Simplified homepage copy into a shorter, more minimal reading experience.
+- Added the Shoreline origin story: Enzo Sison and Will Meinhardt lived
+  together in a small house off Shoreline Boulevard in Mountain View, near
+  Google headquarters.
 - Improved mobile usability with a compact jump nav, tighter hero/search
   layout, better touch targets, reduced card height, and mobile breakpoint QA.
 - Added a local SVG icon system, richer hover states, keyboard focus rings,
@@ -52,6 +55,7 @@ Vercel production at `https://shoreline-pod.com`.
 - Homepage hero: animated `shoreline://waveform.live` terminal panel inspired by
   the Shoreline design guide, with minimal homepage copy, subtle signal sheen,
   and icon-supported actions.
+- Homepage about section: origin story for the name `Shoreline`.
 - Episode detail pages:
   - `episodes/episode-1.html` has full transcript-derived notes in the new
     editorial notes layout, plus exact Apple Podcasts and Spotify episode

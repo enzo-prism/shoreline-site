@@ -54,6 +54,8 @@ product.
 
 4. About strip
    - Short explanation of Shoreline
+   - Origin story: Enzo Sison and Will Meinhardt lived together in a small
+     house off Shoreline Boulevard in Mountain View, near Google headquarters.
    - Hosts
    - Subscribe links
 

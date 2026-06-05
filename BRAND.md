@@ -14,6 +14,17 @@ The website should become the "company brain" for the podcast: every episode
 gets turned into searchable notes, resources, links, definitions, transcripts,
 and practical follow-up paths.
 
+## Origin story
+
+Shoreline is named after the small house off Shoreline Boulevard in Mountain
+View where Enzo Sison and Will Meinhardt lived together near Google
+headquarters.
+
+The name should feel grounded in a real place, not like a generic coastal
+metaphor. It carries the show's useful tension: two friends and operators
+talking from lived experience, close to the center of the AI and technology
+world, but focused on practical work rather than spectacle.
+
 ## Brand role
 
 Shoreline sits at the edge between tools and judgment.
@@ -238,8 +249,10 @@ Every resource should include:
 ## About copy draft
 
 Shoreline is a podcast by Will Meinhardt and Enzo Sison about building with AI
-at the edge of real work. We talk through agents, company brains, automation,
-tool choices, and the human taste needed to make new systems useful.
+at the edge of real work. The name comes from the small house off Shoreline
+Boulevard in Mountain View where they lived together near Google headquarters.
+They talk through agents, company brains, automation, tool choices, and the
+human taste needed to make new systems useful.
 
 The website collects the notes behind the conversations: episode resources,
 timestamps, tools, definitions, and follow-up reading.
