@@ -21,6 +21,8 @@ Vercel production at `https://shoreline-pod.com`.
 - Added transcript-derived tactical guides and resource links for episode 1.
 - Added transcript-derived tactical guides, chapters, and resource links for
   episode 2.
+- Added transcript-derived tactical guides, chapters, and resource links for
+  episode 3.
 - Redesigned the episode show notes pages with the supplied editorial notes
   concept: dark terminal hero, facts panel, chapter rows, resource stack,
   reference rows, quotes, and related listening blocks.
@@ -44,8 +46,9 @@ Vercel production at `https://shoreline-pod.com`.
   - `episodes/episode-2.html` has full transcript-derived notes covering AI
     sales workflows, Telegram capture, Notion/CRM structure, OpenClaw, Hermes,
     and company-brain operations.
-  - `episodes/episode-3.html` has polished starter notes pending transcript
-    expansion.
+  - `episodes/episode-3.html` has full transcript-derived notes covering token
+    maxing, company-brain context, model routing, Codex, Claude Code, Cursor,
+    content strategy, and taste QA.
 - Episode archive: three public YouTube episodes
 - Topic atlas: company brain, AI agents, workflow automation, token economics,
   tool comparisons, human review
@@ -58,6 +61,7 @@ Vercel production at `https://shoreline-pod.com`.
 
 - Confirm RSS public URL.
 - Decide whether to add and redirect `www.shoreline-pod.com`.
-- Add transcript-derived chapters for episode 3.
+- Keep episode notes current as new transcripts, links, and platform URLs become
+  available.
 - Convert topics and resources into structured content collections if the site
   moves to Astro, Next.js, or another framework.
