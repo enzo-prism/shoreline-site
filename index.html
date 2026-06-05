@@ -54,6 +54,16 @@
     </div>
   </nav>
 
+  <div class="mobile-jump-nav" aria-label="Mobile quick navigation">
+    <div class="wrap mobile-jump-inner">
+      <a href="#latest">Latest</a>
+      <a href="#episodes">Episodes</a>
+      <a href="#topics">Topics</a>
+      <a href="#resources">Resources</a>
+      <a href="#listen">Listen</a>
+    </div>
+  </div>
+
   <main id="top">
     <section class="hero">
       <div class="wrap hero-grid">
@@ -64,7 +74,7 @@
           <div class="search-panel" role="search">
             <label for="site-search">Search notes</label>
             <div class="search-row">
-              <input id="site-search" type="search" placeholder="company brain, agents, sales">
+              <input id="site-search" type="search" placeholder="agents, sales" autocomplete="off" enterkeyhint="search">
               <button class="button button-teal" id="clear-search" type="button">Clear</button>
             </div>
             <p id="search-count" class="search-count">All notes.</p>

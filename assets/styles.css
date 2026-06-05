@@ -106,6 +106,7 @@ input {
 
 .brand,
 .footer-brand {
+  min-height: 44px;
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -131,6 +132,9 @@ input {
 }
 
 .nav-links a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
   color: var(--ink-soft);
   border-bottom: 1px solid transparent;
   padding: 4px 0;
@@ -139,6 +143,10 @@ input {
 .nav-links a:hover {
   color: var(--ink);
   border-color: var(--teal);
+}
+
+.mobile-jump-nav {
+  display: none;
 }
 
 .button {
@@ -801,6 +809,16 @@ input {
   display: none !important;
 }
 
+.searchable,
+#latest,
+#episodes,
+#topics,
+#resources,
+#about,
+#listen {
+  scroll-margin-top: 128px;
+}
+
 .empty-state {
   margin-top: 18px;
   border: 1px solid var(--line);
@@ -1203,6 +1221,9 @@ input {
 }
 
 .episode-crumb a {
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
   color: var(--sea);
 }
 
@@ -1837,6 +1858,11 @@ input {
   }
 
   .topbar-inner {
+    min-height: 34px;
+    font-size: 11px;
+  }
+
+  .topbar-inner {
     justify-content: flex-start;
   }
 
@@ -1846,15 +1872,75 @@ input {
 
   .nav-inner {
     min-height: 64px;
+    gap: 14px;
+  }
+
+  .brand {
+    gap: 8px;
+  }
+
+  .brand span {
+    display: inline;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+  }
+
+  .brand-mark {
+    width: 32px;
+    height: 32px;
+  }
+
+  .mobile-jump-nav {
+    position: sticky;
+    top: 64px;
+    z-index: 19;
+    display: block;
+    border-bottom: 1px solid var(--line);
+    background: rgba(246, 241, 233, 0.94);
+    backdrop-filter: blur(14px);
+  }
+
+  .mobile-jump-inner {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 9px 0;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .mobile-jump-inner::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mobile-jump-inner a {
+    min-height: 38px;
+    display: inline-flex;
+    align-items: center;
+    flex: 0 0 auto;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--paper);
+    color: var(--ink-soft);
+    font-family: var(--mono);
+    font-size: 12px;
+    padding: 0 13px;
+  }
+
+  .mobile-jump-inner a:active,
+  .mobile-jump-inner a:hover {
+    border-color: var(--teal);
+    color: var(--teal);
   }
 
   .hero-grid {
-    padding-top: 34px;
+    gap: 30px;
+    padding: 32px 0 36px;
   }
 
   .terminal-panel {
-    height: 330px;
-    grid-template-rows: 52px minmax(0, 1fr) 54px;
+    height: 260px;
+    grid-template-rows: 48px minmax(0, 1fr) 48px;
   }
 
   .terminal-bar {
@@ -1889,14 +1975,37 @@ input {
 
   .lead {
     font-size: 18px;
+    margin-top: 16px;
+  }
+
+  .search-panel {
+    margin-top: 24px;
+    padding: 16px;
   }
 
   .search-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px;
+  }
+
+  .search-row .button {
+    width: auto;
+    min-width: 74px;
+    padding-inline: 12px;
+  }
+
+  .topic-pills {
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  .topic-pills button {
+    min-height: 42px;
+    padding-inline: 13px;
   }
 
   .section {
-    padding: 62px 0;
+    padding: 52px 0;
   }
 
   .section-head {
@@ -1908,6 +2017,14 @@ input {
   .about-grid h2,
   .note-stack h3 {
     font-size: 38px;
+  }
+
+  .latest-feature {
+    gap: 24px;
+  }
+
+  .latest-section .note-grid {
+    display: none;
   }
 
   .note-grid,
@@ -1923,20 +2040,27 @@ input {
   }
 
   .notes-section {
-    padding: 62px 0;
+    padding: 52px 0;
+    scroll-margin-top: 128px;
+  }
+
+  .episode-notes .notes-nav {
+    display: none;
   }
 
   .episode-hero-grid {
-    gap: 34px;
-    padding: 40px 0;
+    gap: 28px;
+    padding: 32px 0 40px;
   }
 
   .episode-crumb {
-    padding-top: 28px;
+    align-items: center;
+    padding-top: 24px;
+    row-gap: 0;
   }
 
   .episode-notes .episode-hero-grid {
-    padding-bottom: 54px;
+    padding-bottom: 42px;
   }
 
   .episode-notes .episode-media-panel {
@@ -1949,10 +2073,29 @@ input {
 
   .episode-summary {
     font-size: 18px;
+    margin-top: 18px;
+  }
+
+  .episode-meta-line {
+    margin-top: 18px;
   }
 
   .episode-player-copy h2 {
     font-size: 32px;
+  }
+
+  .episode-platforms {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .episode-platform-link {
+    min-height: 58px;
+    padding: 12px;
+  }
+
+  .episode-platform-link span {
+    font-size: 10px;
   }
 
   .chapter-row {
@@ -1978,6 +2121,7 @@ input {
 
   .episode-notes .resource-note {
     border-right: 0;
+    min-height: auto;
   }
 
   .chapter-arrow,
@@ -1985,22 +2129,19 @@ input {
     display: none;
   }
 
-  .episode-platforms {
-    grid-template-columns: 1fr;
-  }
-
   .episode-row {
-    grid-template-columns: 56px 82px minmax(0, 1fr);
+    grid-template-columns: 48px 78px minmax(0, 1fr);
     gap: 12px;
-    min-height: 104px;
+    min-height: 96px;
+    padding: 16px 0;
   }
 
   .episode-thumb {
-    width: 82px;
+    width: 78px;
   }
 
   .episode-title {
-    font-size: 24px;
+    font-size: 23px;
   }
 
   .episode-tag,
@@ -2010,31 +2151,53 @@ input {
 
   .button {
     width: 100%;
+    min-height: 44px;
   }
 
   .nav-inner .button {
     width: auto;
   }
 
+  .topic-card,
+  .resource-card,
+  .listen-card {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .listen-card {
+    min-height: 108px;
+  }
+
+  .gist-grid {
+    gap: 28px;
+  }
+
+  .gist-body p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .gist-body .drop::first-letter {
+    font-size: 58px;
+  }
+
+  .fact-row {
+    padding: 13px 16px;
+  }
+
 }
 
 @media (max-width: 420px) {
-  .brand span {
-    display: none;
+  .nav-inner .button {
+    padding-inline: 14px;
   }
 
-  .brand .brand-symbol {
-    display: inline;
-  }
-
-  .episode-notes .brand {
-    gap: 8px;
-  }
-
+  .brand span,
   .episode-notes .brand span:last-child {
     display: inline;
     font-size: 11px;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.16em;
   }
 
   .hero h1 {
@@ -2058,9 +2221,57 @@ input {
     font-size: 7px;
   }
 
+  .terminal-panel {
+    height: 230px;
+  }
+
   .section-head h2,
   .about-grid h2,
   .note-stack h3 {
     font-size: 33px;
+  }
+}
+
+@media (max-width: 350px) {
+  .episode-platforms {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) and (max-height: 520px) and (orientation: landscape) {
+  .hero-grid,
+  .episode-notes .episode-hero-grid {
+    grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
+    gap: 28px;
+    align-items: center;
+    padding: 30px 0 36px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .lead {
+    margin-top: 14px;
+  }
+
+  .search-panel {
+    margin-top: 20px;
+  }
+
+  .terminal-panel {
+    height: 260px;
+  }
+
+  .episode-notes .episode-media-panel {
+    order: 0;
+  }
+
+  .episode-notes .episode-hero h1 {
+    font-size: 42px;
+  }
+
+  .episode-notes .episode-summary {
+    font-size: 17px;
   }
 }

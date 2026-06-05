@@ -52,6 +52,16 @@ filterButtons.forEach((button) => {
     const filter = button.dataset.filter || "";
     searchInput.value = filter;
     applySearch(filter);
+
+    if (window.matchMedia("(max-width: 720px)").matches) {
+      window.requestAnimationFrame(() => {
+        const firstResult = document.querySelector(".searchable:not(.is-hidden)");
+        firstResult?.scrollIntoView({
+          behavior: prefersReducedMotion ? "auto" : "smooth",
+          block: "start",
+        });
+      });
+    }
   });
 });
 

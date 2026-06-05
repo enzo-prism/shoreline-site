@@ -18,6 +18,8 @@ Vercel production at `https://shoreline-pod.com`.
 - Replaced the homepage hero thumbnail with an animated terminal-style ASCII
   waveform.
 - Simplified homepage copy into a shorter, more minimal reading experience.
+- Improved mobile usability with a compact jump nav, tighter hero/search
+  layout, better touch targets, reduced card height, and mobile breakpoint QA.
 - Added individual show notes pages for episodes 1, 2, and 3.
 - Added transcript-derived tactical guides and resource links for episode 1.
 - Added transcript-derived tactical guides, chapters, and resource links for
