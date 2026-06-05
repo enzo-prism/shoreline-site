@@ -26,6 +26,8 @@ Vercel production at `https://shoreline-pod.com`.
 - Redesigned the episode show notes pages with the supplied editorial notes
   concept: dark terminal hero, facts panel, chapter rows, resource stack,
   reference rows, quotes, and related listening blocks.
+- Replaced the notes-page hero player UI with embedded YouTube videos and clean
+  Apple Podcasts / Spotify Podcasts cards.
 - Added dedicated favicon assets and a minimal Open Graph image.
 - Shortened title tags and meta descriptions across the site.
 - Verified desktop and mobile layout with browser screenshots.
@@ -42,13 +44,16 @@ Vercel production at `https://shoreline-pod.com`.
   the Shoreline design guide.
 - Episode detail pages:
   - `episodes/episode-1.html` has full transcript-derived notes in the new
-    editorial notes layout.
+    editorial notes layout, plus exact Apple Podcasts and Spotify episode
+    links.
   - `episodes/episode-2.html` has full transcript-derived notes covering AI
     sales workflows, Telegram capture, Notion/CRM structure, OpenClaw, Hermes,
-    and company-brain operations.
+    and company-brain operations. Apple Podcasts and Spotify currently link to
+    the Shoreline show feeds until per-episode audio links are public.
   - `episodes/episode-3.html` has full transcript-derived notes covering token
     maxing, company-brain context, model routing, Codex, Claude Code, Cursor,
-    content strategy, and taste QA.
+    content strategy, and taste QA. Apple Podcasts and Spotify currently link
+    to the Shoreline show feeds until per-episode audio links are public.
 - Episode archive: three public YouTube episodes
 - Topic atlas: company brain, AI agents, workflow automation, token economics,
   tool comparisons, human review
