@@ -6,7 +6,8 @@ Last updated: June 5, 2026
 
 - Local project: `/Users/enzo/Projects/shoreline-site`
 - GitHub repo: `https://github.com/enzo-prism/shoreline-site`
-- Production deploy: pending Vercel deployment
+- Vercel project: `enzo-design-prisms-projects/shoreline-site`
+- Production URL: `https://shoreline-site-lac.vercel.app`
 
 ## Stack
 
@@ -40,12 +41,16 @@ Production deploy command:
 vercel deploy --prod --yes
 ```
 
+The first production deployment connected the Vercel project to the GitHub
+repository and created the stable production alias above.
+
 The `.vercel` folder is intentionally ignored. Project linking can be recreated
 locally with the Vercel CLI.
 
 ## Verification checklist
 
 - Home page returns `200 OK`.
+- Vercel deployment status is `Ready`.
 - Desktop layout has no horizontal overflow.
 - Mobile layout has no horizontal overflow.
 - Search/filter interaction works.

@@ -4,7 +4,8 @@ Last updated: June 5, 2026
 
 ## Current state
 
-The first static Shoreline website is built and ready to publish.
+The first static Shoreline website is built, pushed to GitHub, and deployed to
+Vercel production.
 
 ## Completed
 
@@ -16,6 +17,8 @@ The first static Shoreline website is built and ready to publish.
 - Added search/filter interaction.
 - Verified desktop and mobile layout with browser screenshots.
 - Added Vercel static deployment config.
+- Created GitHub repo: `https://github.com/enzo-prism/shoreline-site`
+- Deployed production site: `https://shoreline-site-lac.vercel.app`
 
 ## Current content
 
@@ -35,3 +38,4 @@ The first static Shoreline website is built and ready to publish.
 - Convert topics and resources into structured content collections if the site
   moves to Astro, Next.js, or another framework.
 - Add absolute Open Graph metadata after the production Vercel URL is known.
+- Add a custom domain if Shoreline gets one.

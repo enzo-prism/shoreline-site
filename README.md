@@ -27,7 +27,7 @@ content documentation that should guide future builds.
 - Handle: `@ShorelinePod`
 - Channel ID: `UColW0u1IGPY7s9wWDkFejMw`
 - GitHub repo: https://github.com/enzo-prism/shoreline-site
-- Production URL: pending Vercel deployment
+- Production URL: https://shoreline-site-lac.vercel.app
 
 ## Local preview
 
