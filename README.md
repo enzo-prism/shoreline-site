@@ -8,6 +8,8 @@ content documentation that should guide future builds.
 ## Site
 
 - [index.html](index.html) - first static website pass.
+- [episodes](episodes) - individual show notes pages for the first three
+  episodes.
 - [assets/styles.css](assets/styles.css) - visual system and responsive layout.
 - [assets/script.js](assets/script.js) - search/filter interactions and the hero
   waveform animation.
@@ -46,3 +48,6 @@ http://localhost:4173/index.html
 The current build runs by opening `index.html` directly in a browser. The next
 step should be turning episode notes, topics, and resources into real content
 collections if the site moves into Astro, Next.js, or another framework.
+
+Episode 1 has transcript-derived tactical notes. Episodes 2 and 3 have starter
+notes pages that should be expanded when transcripts are available.

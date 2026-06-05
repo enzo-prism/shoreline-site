@@ -17,6 +17,8 @@ Vercel production at `https://shoreline-pod.com`.
 - Added search/filter interaction.
 - Replaced the homepage hero thumbnail with an animated terminal-style ASCII
   waveform.
+- Added individual show notes pages for episodes 1, 2, and 3.
+- Added transcript-derived tactical guides and resource links for episode 1.
 - Verified desktop and mobile layout with browser screenshots.
 - Added Vercel static deployment config.
 - Created GitHub repo: `https://github.com/enzo-prism/shoreline-site`
@@ -29,6 +31,10 @@ Vercel production at `https://shoreline-pod.com`.
 - Latest episode feature: `Token Maxing and the Company Brain Era | Shoreline Ep. 3`
 - Homepage hero: animated `shoreline://waveform.live` terminal panel inspired by
   the Shoreline design guide.
+- Episode detail pages:
+  - `episodes/episode-1.html` has full transcript-derived notes.
+  - `episodes/episode-2.html` has starter notes pending transcript expansion.
+  - `episodes/episode-3.html` has starter notes pending transcript expansion.
 - Episode archive: three public YouTube episodes
 - Topic atlas: company brain, AI agents, workflow automation, token economics,
   tool comparisons, human review
@@ -41,6 +47,6 @@ Vercel production at `https://shoreline-pod.com`.
 
 - Confirm RSS public URL.
 - Decide whether to add and redirect `www.shoreline-pod.com`.
-- Add transcript-derived chapters for each episode.
+- Add transcript-derived chapters for episodes 2 and 3.
 - Convert topics and resources into structured content collections if the site
   moves to Astro, Next.js, or another framework.

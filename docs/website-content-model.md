@@ -217,7 +217,8 @@ Topic meta description:
 High priority:
 
 - Write the show description for YouTube and the site.
-- Create episode pages for episodes 1, 2, and 3.
+- Expand episode 2 and 3 starter pages with transcript-derived chapters and
+  exact resource mentions.
 - Build the first topic page: `company-brain`.
 - Build the first resource index from the first three episodes.
 - Confirm podcast platform links and states.
