@@ -1,0 +1,14 @@
+# Shoreline
+
+> Shoreline is a podcast about applied AI — agents, company memory, workflow automation, token economics, and how practitioners actually use these tools. This site is a companion library of episode notes and resources. Named for Shoreline Boulevard in Mountain View, where hosts Enzo Sison and Will Meinhardt lived near Google headquarters.
+
+## Episodes
+
+- [Episode 1: AI agents and company memory](https://shoreline-pod.com/episodes/episode-1): AI agents and the "company brain" — building organizational memory.
+- [Episode 2: Sales work, agents, and the friction gap](https://shoreline-pod.com/episodes/episode-2): AI sales workflows and where automation meets friction.
+- [Episode 3: Token maxing and the company brain](https://shoreline-pod.com/episodes/episode-3): Token economics and getting the most out of context.
+- [Episode 4: The expert's moat and the beginner's mind](https://shoreline-pod.com/episodes/episode-4): How expertise and fresh perspective both hold up in the AI era.
+
+## More
+
+- [Home](https://shoreline-pod.com/): Latest episode, topic index, and recent notes.
