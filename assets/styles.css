@@ -761,6 +761,7 @@ input {
 
 .episode-thumb {
   width: 118px;
+  height: auto;
   aspect-ratio: 16 / 10;
   object-fit: cover;
   border-radius: 4px;
@@ -1009,6 +1010,18 @@ input {
   color: var(--ink-soft);
 }
 
+.topic-cue {
+  display: inline-block;
+  margin-top: 16px;
+  border-bottom: 1px solid rgba(31, 111, 92, 0.35);
+  padding-bottom: 2px;
+  transition: border-color 160ms ease;
+}
+
+a.topic-card:hover .topic-cue {
+  border-color: var(--teal);
+}
+
 .resource-card {
   background: var(--paper);
 }
@@ -1069,6 +1082,7 @@ input {
 
 .host-panel img {
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }

@@ -1,6 +1,6 @@
 # Deployment
 
-Last updated: June 5, 2026
+Last updated: June 11, 2026
 
 ## Source of truth
 
@@ -15,6 +15,8 @@ Last updated: June 5, 2026
 This is a static website:
 
 - `index.html`
+- `episodes/*.html` and `topics/*.html`
+- `404.html` (Vercel serves it for unknown routes)
 - `assets/styles.css`
 - `assets/script.js`
 - local images in `assets/images`
@@ -55,10 +57,15 @@ locally with the Vercel CLI.
 - `https://shoreline-pod.com` is the canonical production URL.
 - Vercel deployment status is `Ready`.
 - Vercel alias maps `shoreline-pod.com` to the current production deployment.
+- `sitemap.xml`, `robots.txt`, and `llms.txt` return `200 OK`.
+- Episode pages (`/episodes/episode-N`) and topic pages (`/topics/...`)
+  resolve at their extensionless clean URLs.
+- An unknown URL serves the custom `404.html`.
 - Desktop layout has no horizontal overflow.
 - Mobile layout has no horizontal overflow.
 - Search/filter interaction works.
 - Public YouTube links open to the confirmed Shoreline channel/videos.
+- Episode chapter rows open YouTube at the correct timestamp.
 - Apple Podcasts, Spotify, and YouTube cards open confirmed public links.
 - RSS remains marked as pending until a public feed URL is confirmed.
 
@@ -67,5 +74,5 @@ locally with the Vercel CLI.
 - Apex domain `shoreline-pod.com` is registered under Vercel and uses Vercel
   nameservers.
 - `https://shoreline-pod.com` has valid TLS and serves the Shoreline site.
-- `www.shoreline-pod.com` is not currently treated as production; it had a TLS
-  certificate mismatch during the June 5 verification pass.
+- `www.shoreline-pod.com` redirects (307) to the apex domain. Verified
+  June 11, 2026; the June 5 TLS certificate mismatch is resolved.

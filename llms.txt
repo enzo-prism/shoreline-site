@@ -4,10 +4,16 @@
 
 ## Episodes
 
-- [Episode 1: AI agents and company memory](https://shoreline-pod.com/episodes/episode-1): AI agents and the "company brain" — building organizational memory.
-- [Episode 2: Sales work, agents, and the friction gap](https://shoreline-pod.com/episodes/episode-2): AI sales workflows and where automation meets friction.
-- [Episode 3: Token maxing and the company brain](https://shoreline-pod.com/episodes/episode-3): Token economics and getting the most out of context.
-- [Episode 4: The expert's moat and the beginner's mind](https://shoreline-pod.com/episodes/episode-4): How expertise and fresh perspective both hold up in the AI era.
+- [Episode 1: AI Agents and Knowledge Management: Building a Company Brain](https://shoreline-pod.com/episodes/episode-1): AI agents and the "company brain" — local models, Notion and CRM workflows, agent lanes, and review loops.
+- [Episode 2: AI Workflow Automation for Sales, Prospecting, and Productivity](https://shoreline-pod.com/episodes/episode-2): AI sales workflows, Telegram voice capture, and company-brain operations.
+- [Episode 3: Token Maxing and the Company Brain Era](https://shoreline-pod.com/episodes/episode-3): Token economics, model routing, and Codex vs Claude Code vs Cursor.
+- [Episode 4: The Expert's Moat and the Beginner's Mind](https://shoreline-pod.com/episodes/episode-4): Building from your phone, the draining expert moat, system engineering, and local models.
+
+## Topics
+
+- [Company brain](https://shoreline-pod.com/topics/company-brain): A guide to building the shared memory that makes AI agents useful inside a business.
+- [Token economics](https://shoreline-pod.com/topics/token-economics): Token maxing, model routing, AI spend incentives, and open-source fallbacks.
+- [Tool comparisons](https://shoreline-pod.com/topics/tool-comparisons): Codex vs Claude Code vs Cursor, agent harnesses, and how to score them on real work.
 
 ## More
 

@@ -42,6 +42,9 @@ canonical public URL.
 
 ## Follow-up
 
-`https://www.shoreline-pod.com` was not production-safe during verification. It
-returned a TLS certificate mismatch. If the `www` hostname should work, add it
-to the Vercel project and redirect it to the apex domain.
+`https://www.shoreline-pod.com` was not production-safe during the June 5
+verification: it returned a TLS certificate mismatch.
+
+Resolved: as of June 11, 2026, `www.shoreline-pod.com` returns a `307`
+redirect to `https://shoreline-pod.com/` with valid TLS. No further action
+needed.
